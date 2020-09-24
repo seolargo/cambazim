@@ -1,0 +1,147 @@
+[
+    {
+        "id": 0,
+        "usttur": "Kümes Hayvanları",
+        "tur": "Devekuşu"
+    },
+    {
+        "id": 1,
+        "usttur": "Kümes Hayvanları",
+        "tur": "Güvercin"
+    },
+    {
+        "id": 2,
+        "usttur": "Kümes Hayvanları",
+        "tur": "Hindi"
+    },
+    {
+        "id": 3,
+        "usttur": "Kümes Hayvanları",
+        "tur": "Horoz"
+    },
+    {
+        "id": 4,
+        "usttur": "Kümes Hayvanları",
+        "tur": "Kaz"
+    },
+    {
+        "id": 5,
+        "usttur": "Kümes Hayvanları",
+        "tur": "Kuğu"
+    },
+    {
+        "id": 6,
+        "usttur": "Kümes Hayvanları",
+        "tur": "Ördek"
+    },
+    {
+        "id": 7,
+        "usttur": "Kümes Hayvanları",
+        "tur": "Tavuk"
+    },
+    {
+        "id": 8,
+        "usttur": "Kümes Hayvanları",
+        "tur": "Tavus Kuşu"
+    },
+    {
+        "id": 9,
+        "usttur": "Büyükbaş Hayvanlar",
+        "tur": "At"
+    }, 
+    {
+        "id": 10,
+        "usttur": "Büyükbaş Hayvanlar",
+        "tur": "Boğa"
+    },
+    {
+        "id": 11,
+        "usttur": "Büyükbaş Hayvanlar",
+        "tur": "Deve"
+    },
+    {
+        "id": 12,
+        "usttur": "Büyükbaş Hayvanlar",
+        "tur": "Eşek"
+    },
+    {
+        "id": 13,
+        "usttur": "Büyükbaş Hayvanlar",
+        "tur": "İnek"
+    },
+    {
+        "id": 14,
+        "usttur": "Büyükbaş Hayvanlar",
+        "tur": "Manda"
+    },
+    {
+        "id": 15,
+        "usttur": "Küçükbaş Hayvanlar",
+        "tur": "Keçi"
+    },
+    {
+        "id": 16,
+        "usttur": "Küçükbaş Hayvanlar",
+        "tur": "Koç"
+    },
+    {
+        "id": 17,
+        "usttur": "Küçükbaş Hayvanlar",
+        "tur": "Koyun"
+    },
+    {
+        "id": 18,
+        "usttur": "Küçükbaş Hayvanlar",
+        "tur": "Kuzu"
+    },
+    {
+        "id": 19,
+        "usttur": "Küçükbaş Hayvanlar",
+        "tur": "Oğlak"
+    },
+    {
+        "id": 20,
+        "usttur": "Deniz Canlıları",
+        "tur": "Tatlı Su Balıkları"
+    },
+    {
+        "id": 21,
+        "usttur": "Deniz Canlıları",
+        "tur": "Tuzlu Su Balıkları"
+    },
+    {
+        "id": 22,
+        "usttur": "Deniz Canlıları",
+        "tur": "Anemonlar"
+    },
+    {
+        "id": 23,
+        "usttur": "Deniz Canlıları",
+        "tur": "Deniz Yıldızı"
+    },
+    {
+        "id": 24,
+        "usttur": "Deniz Canlıları",
+        "tur": "Salyangoz"
+    },
+    {
+        "id": 25,
+        "usttur": "Deniz Canlıları",
+        "tur": "Karides"
+    },
+    {
+        "id": 26,
+        "usttur": "Deniz Canlıları",
+        "tur": "Mercan"
+    },
+    {
+        "id": 27,
+        "usttur": "Deniz Canlıları",
+        "tur": "Yengeç"
+    },
+    {
+        "id": 28,
+        "usttur": "Deniz Canlıları",
+        "tur": "Istakoz"
+    }
+]

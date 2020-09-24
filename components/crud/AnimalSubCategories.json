@@ -1,0 +1,50 @@
+[
+    {
+        "tur": "Devekuşu",
+        "subtur": "Civciv"
+    },
+    {
+        "tur": "Güvercin",
+        "subtur": "Civciv"
+    },
+    {
+        "tur": "Hindi",
+        "subtur": "Civciv"
+    },
+    {
+        "tur": "Horoz",
+        "subtur": "Civciv"
+    },
+    {
+        "tur": "Kaz",
+        "subtur": "Civciv"
+    },
+    {
+        "tur": "Kuğu",
+        "subtur": "Civciv"
+    },
+    {
+        "tur": "Ördek",
+        "subtur": "Civciv"
+    },
+    {
+        "tur": "Tavuk",
+        "subtur": "Civciv"
+    },
+    {
+        "tur": "Tavuk",
+        "subtur": "Yarka"
+    },
+    {
+        "tur": "Tavuk",
+        "subtur": "Süs Tavuğu"
+    },
+    {
+        "tur": "Tavuk",
+        "subtur": "Yumurta Tavuğu"
+    },
+    {
+        "tur": "Tavus Kuşu",
+        "subtur": "Civciv"
+    }
+]

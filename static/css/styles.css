@@ -1,0 +1,281 @@
+/*
+    NOTE:
+    This CSS file targets all the project.
+*/
+#nprogress .bar {
+    height: 4px !important;
+    background-color: green;
+    color: green;
+}
+
+/*
+    Place where the user publishes his detailed notice.
+    By setting the min-height, we can expand or minimize the area of the notice page.
+*/
+.ql-editor {
+    min-height: 300px;
+}
+
+.featured-image {
+    /*width: 30%;*/
+    width: 50%;
+    height: 100%;
+
+    object-fit: cover;
+    /*margin-bottom: 20px;*/
+    margin-left: 135px;
+    border: 1px solid #8f918f;
+}
+
+.list-notices tr{
+    color: black;
+}
+
+.list-notices tr td{
+    padding-left: 10px;
+}
+
+#list-notices-image-id {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+#list-notices-animal-type-id {
+    width: 200px;
+    padding-left: 0px;
+    padding-right: 300px;
+}
+
+/*
+    İlan başlığı
+*/
+#list-notices-blog-title-type-id {
+    width: 200px;
+    padding-right: 10px;
+    padding-left: 0px;   
+}
+
+/*
+    Kimden
+*/
+#list-notices-whom-type-id {
+    width: 200px;
+    padding-right: 250px;
+    padding-left: 0px; 
+}
+
+/*
+    İlan tarihi
+*/
+#list-notices-notice-date-type-id {
+    width: 200px;   
+    padding-right: 150px;
+    padding-left: 0px; 
+}
+
+/*
+    Ülke
+*/
+#list-notices-show-blog-categories-type-id {
+    width: 200px;
+    padding-right: 10px;
+    padding-left: 0px; 
+}
+
+/*
+    Şehir
+*/
+#list-notices-show-blog-tags-type-id {
+    width: 200px;
+    padding-right: 10px;
+    padding-left: 0px;
+}
+
+#header-animal-image-id {
+    width: 200px;
+    padding-left: 30px;
+}
+
+#header-animal-type-id {
+    width: 200px;
+    padding-left: 30px;
+}
+
+#header-notice-header-id {
+    width: 200px;
+    padding-left: 30px;
+}
+
+hr {
+    text-align: left;
+    background-color: green;
+    width: 0px;
+}
+
+/****BURSALOGO****************************************************************/
+.bursalogo {
+    border-radius: 0px;
+    width: 370px;
+    height: 155px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/tr/b/b1/Bursa_%C5%9Fehir_logosu.png");
+}
+/*******************************************************************************/
+
+/****CAMBAZIM LOGO**************************************************************/
+.cambazimlogo {
+    border-radius: 0px;
+    width: 700px;
+    height: 700px;
+    background-image: url("https://i.ibb.co/Z1pPXgj/pp.jpg");
+}
+/*******************************************************************************/
+
+/****HEADER*********************************************************************/
+.imagesThree {
+    border-radius: 0px;
+    width: 1120px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    opacity: 1;
+    border-radius: 8px;
+    background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600125624/Screenshot_2_eovois.png');
+}
+/*******************************************************************************/
+
+/****INITIAL PROFILE PICTURE****************************************************/
+.initialProfilePicture {
+    border-radius: 0px;
+    width: 300px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600691160/initialProfilePicture.png');
+}
+/*******************************************************************************/
+
+/*******************************************************************************/
+
+/****DROPDOWNS******************************************************************/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+/*******************************************************************************/
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-bottom: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    margin-bottom: 5px;
+}
+
+#pictureBlog {
+    border: 1px solid green;
+}
+
+#blogImageCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    border-color: green;
+}
+
+/********************************CART BADGE***********************/
+.cart-badge, .cart-badge:hover {
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: green
+}
+/*****************************************************************/
+
+#city_id {
+    height: 200px;
+    width: 250px;  
+    overflow-y: scroll;
+}
+
+#price_id {
+    height: 200px;
+    width: 250px;  
+    overflow-y: scroll;
+}
+
+#town_id {
+    height: 200px;
+    width: 250px;  
+    overflow-y: scroll;
+}
+
+#village_id {
+    height: 200px;
+    width: 250px;  
+    overflow-y: scroll;
+}
+
+#signinSignup {
+    color: grey;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#adminPanel {
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+#appname:hover {
+    cursor: pointer;
+}
+
+#bakilacaklarlistem:hover {
+    cursor: pointer;
+}
+
+#forgotmypassword {
+    margin-left: 20px;
+}
