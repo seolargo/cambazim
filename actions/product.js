@@ -139,6 +139,8 @@ export const listSearch = (params) => {
 /**
  **  Added later. See: Shopping Udemy
  **  Where we filter the products. Main page renders the datas inside this code.
+ **  
+ **  Note: mode: no-cors caused error. 
  **/
 export const getFilteredProducts = (skip, limit, filters = {}) => {
     const data = {
@@ -152,7 +154,6 @@ export const getFilteredProducts = (skip, limit, filters = {}) => {
             Accept: "application/json",
             "Content-Type": "application/json"
         },
-        mode: 'no-cors',
         body: JSON.stringify(data)
     })
         .then(response => {
