@@ -136,28 +136,10 @@ export const listSearch = (params) => {
     .catch(err => console.log(err));
 };
 
-// Added later. See: Shopping Udemy
-
-export const getProducts = sortBy => {
-    return fetch(`${API}/products?sortBy=${sortBy}&order=desc&limit=6`, {
-        method: "GET"
-    })
-        .then(response => {
-            return response.json();
-        })
-        .catch(err => console.log(err));
-};
-
-export const getProductsPure = () => {
-    return fetch(`${API}/products?sortBy=${sortBy}&order=desc&limit=6`, {
-        method: "GET"
-    })
-        .then(response => {
-            return response.json();
-        })
-        .catch(err => console.log(err));
-};
-
+/**
+ **  Added later. See: Shopping Udemy
+ **  Where we filter the products. Main page renders the datas inside this code.
+ **/
 export const getFilteredProducts = (skip, limit, filters = {}) => {
     const data = {
         limit,
@@ -170,6 +152,7 @@ export const getFilteredProducts = (skip, limit, filters = {}) => {
             Accept: "application/json",
             "Content-Type": "application/json"
         },
+        mode: 'no-cors',
         body: JSON.stringify(data)
     })
         .then(response => {

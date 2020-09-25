@@ -151,6 +151,7 @@ const Index = ({products, tags, totalProducts, productsLimit, productSkip, route
             if (data.error) {
                 setError(data.error);
             } else {
+                console.log('data: ', data.data);
                 setFilteredResults(data.data);
                 setSize(data.size);
                 setSkip(0);
