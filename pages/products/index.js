@@ -3,13 +3,14 @@ import Link from 'next/link';
 import {withRouter} from 'next/router';
 import Layout from '../../components/Layout';
 import {useState} from 'react';
-import {listProductsWithCategoriesAndTags} from '../../actions/product';
 import renderHTML from 'react-render-html';
 import moment from 'moment';
 import Card from '../../components/product/Card';
 import {API, DOMAIN, APP_NAME, FB_APP_ID} from '../../config';
 
-const Products = ({products, categories, tags, totalProducts, productsLimit, productSkip, router}) => {
+import {listProductsAll} from '../../actions/product';
+
+const Products = ({products, totalProducts, productsLimit, productSkip, router}) => {
     const head = () => {
         <Head>
             <title>
@@ -75,15 +76,6 @@ const Products = ({products, categories, tags, totalProducts, productsLimit, pro
             );
         });
     };
-
-    const showAllCategories = () => {
-        //Get the blog, get the index.
-        return categories.map((c, i) => (
-            <Link href={`/categories/${c.slug}`} key={i}>
-                <a className="btn btn-success mr-1 ml-1 mt-3">{c.name}</a>
-            </Link>
-        ));   
-    }
     
     const showLoadedProducts = () => {
         return loadedProducts.map((product, i) => (
@@ -109,11 +101,6 @@ const Products = ({products, categories, tags, totalProducts, productsLimit, pro
                                     Sektörden Haberler ve En Güncel Bilgiler
                                 </h1>
                             </div>
-                            <section>
-                                <div className="pb-5 text-center">
-                                    {showAllCategories()}
-                                </div>
-                            </section>
                         </header>
                     </div>
 
