@@ -10,7 +10,8 @@ import Layout from '../components/Layout';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 import { AiFillMail, AiFillPhone, AiOutlineHome } from 'react-icons/ai';
 
-import SocialFollow from './SocialFollow';
+//import SocialFollow from './SocialFollow';
+import { FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -22,7 +23,13 @@ const Footer = () => {
                             <MDBCol md="6" lg="5" className="text-center text-md-left mb-4 mb-md-0">
                                 <h6 className="mb-0 white-text" style={{ color: 'white' }}>
                                     <p style={{ paddingRight: '10px' }}>Sosyal medya kanallarımıza bir göz atın!</p>
-                                    <SocialFollow />
+                                    {/*<SocialFollow />*/}
+                                    <a
+                                        href="https://www.facebook.com/Cambazim-113928107117730/"
+                                        className="facebook social"
+                                    >
+                                        <FaFacebook />
+                                    </a>
                                 </h6>
                             </MDBCol>
                         </MDBRow>
