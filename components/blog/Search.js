@@ -54,11 +54,13 @@ const Search = () => {
     const searchForm = () => (
         <form onSubmit={searchSubmit}>
             <div className="row">
-                <div className="col-md-4" style={{marginLeft: '500px'}}>
+                {/*<div className="col-md-4" style={{marginLeft: '500px'}} id="search-bar">
+                    <input type="search" className="form-control" placeholder="Bloglarda ara" onChange={handleChange} />
+                   </div>*/}
+                <div className="col-md-4" id="search-bar">
                     <input type="search" className="form-control" placeholder="Bloglarda ara" onChange={handleChange} />
                 </div>
-
-                <div className="col-md-1">
+                <div className="col-md-1" id="search-bar">
                     <button className="btn btn-block btn-outline-success" type="submit">
                         Ara
                     </button>

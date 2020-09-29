@@ -113,7 +113,7 @@ const Header = () => {
 
                                 <NavItem>
                                     <NavLink href="/signup" id="signinSignup"> 
-                                        Kayıt ol
+                                        Kayıt Ol
                                     </NavLink>
                                 </NavItem>
 

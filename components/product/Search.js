@@ -65,18 +65,15 @@ const Search = () => {
 
     const searchForm = () => (
         <form onSubmit={searchSubmit}>
-            <div className="row">
-
-                <div className="col-md-4" style={{marginLeft: '500px'}}>
+            <div className="row" id="search-bar">
+                <div className="col-md-6" >
                     <input type="search" className="form-control" placeholder="İlanlarda ara" onChange={handleChange} />
                 </div>
-
-                <div className="col-md-1">
+                <div className="col-md-2">
                     <button className="btn btn-block btn-outline-success" type="submit">
                         Ara
                     </button>
                 </div>
-
             </div>
         </form>
     );

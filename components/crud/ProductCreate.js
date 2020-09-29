@@ -1249,13 +1249,6 @@ const CreateProduct = ({router}) => {
                         onChange={handleBody}
                     />
                 </div>
-
-                <div>
-                    <button type="submit" className="btn btn-success">
-                        İlanı Yayımla
-                    </button> 
-                </div>
-
             </form>
         );
     };
@@ -1380,6 +1373,11 @@ const CreateProduct = ({router}) => {
                                 containerElement={<div style={{ height: `400px` }} />}
                                 mapElement={<div style={{ height: `100%` }} />} 
                             />    
+                            <div id="publish-notice-button">
+                                <button type="submit" className="btn btn-success mt-5">
+                                    İlanı Yayımla
+                                </button> 
+                            </div>
                         </div>
                     </div>
                 </div>

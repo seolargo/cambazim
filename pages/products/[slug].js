@@ -133,41 +133,8 @@ const SingleProduct = ({ product, query }) => {
                     <article>
                         <div className="container-fluid">
                             <section> 
-                                {/* This section can be used for rotating the page stayed at the notice page. 
-                                    When you want to rotate, change below, not CSS file.*/}
-                                {/* See CSS file --> featured-image
-                                <div className="row" style={{marginTop: '20px', marginLeft: '300px'}}> */}
                                 <div className="row">
-                                    <div className="col-sm" >
-                                        {/*<ImageGallery items={images} />*/}
-                                        {/*<ReactImageMagnify {...{
-                                            smallImage: {
-                                                alt: 'Notice page picture.',
-                                                //isFluidWidth: true,
-                                                src: `${API}/blog/photo/${blog.slug}`,
-                                                className: "img img-fluid featured-image",
-                                                width: 500,
-                                                height: 500
-                                            },
-                                            largeImage: {
-                                                src: `${API}/blog/photo/${blog.slug}`,
-                                                width: 1200,
-                                                height: 1800
-                                            }
-                                        }
-                                        }/>*/}
-                                        {/*<img 
-                                            src={`${API}/blog/photo/${blog.slug}`} 
-                                            alt={blog.title} 
-                                            className="img img-fluid featured-image"
-                                        />*/}
-
-                                        {/* NOTE: We tried to use it. It worked at first. But there is an issue for the pictures (attention to the pixels)
-                                            See the ref. page: https://github.com/zulucoda/react-swift-slider/blob/master/README.md
-                                            <SwiftSlider data={data} dotColor={"green"} activeDotColor={"brown"} height={460} />    */}
-                                        
-                                        {/* See Slider ref. page: https://reactjsexample.com/a-slider-which-uses-react-spring-under-the-hood/ */}
-                                         
+                                    <div className="col" style={{'min-height': '540px', width: 'auto'}} >
                                         <Slider 
                                             activeIndex={2} 
                                             hasBullets 
@@ -175,44 +142,43 @@ const SingleProduct = ({ product, query }) => {
                                             ArrowComponent={ArrowComponent}
                                             onSlideChange={onSlideChange}
                                             >
-                                                {`${API}/product/photo1/${product.slug}` && <img 
-                                                    src={`${API}/product/photo1/${product.slug}`} 
-                                                    alt={product.title} 
-                                                    className="img img-fluid featured-image mt-5"
-                                                    style={{width: '540px', height: 'auto'}}
-                                                />}
-                                                {`${API}/product/photo2/${product.slug}` && <img 
-                                                    src={`${API}/product/photo2/${product.slug}`} 
-                                                    alt={product.title} 
-                                                    className="img img-fluid featured-image mt-5"
-                                                    style={{width: '540px', height: 'auto'}}
-                                                />}
-                                                {`${API}/product/photo3/${product.slug}` && <img 
-                                                    src={`${API}/product/photo3/${product.slug}`} 
-                                                    alt={product.title} 
-                                                    className="img img-fluid featured-image mt-5"
-                                                    style={{width: '540px', height: 'auto'}}
-                                                />}
-                                                {`${API}/product/photo4/${product.slug}` && <img 
-                                                    src={`${API}/product/photo4/${product.slug}`} 
-                                                    alt={product.title} 
-                                                    className="img img-fluid featured-image mt-5"
-                                                    style={{width: '540px', height: 'auto'}}
-                                                />}
-                                                {`${API}/product/photo5/${product.slug}` && <img 
-                                                    src={`${API}/product/photo5/${product.slug}`} 
-                                                    alt={product.title} 
-                                                    className="img img-fluid featured-image mt-5"
-                                                    style={{width: '540px', height: 'auto'}}
-                                                />}
-                                                {`${API}/product/photo6/${product.slug}` && <img 
-                                                    src={`${API}/product/photo6/${product.slug}`} 
-                                                    alt={product.title} 
-                                                    className="img img-fluid featured-image mt-5"
-                                                    style={{width: '540px', height: 'auto'}}
-                                                />}
+                                            {`${API}/product/photo1/${product.slug}` && <img 
+                                                src={`${API}/product/photo1/${product.slug}`} 
+                                                alt={product.title} 
+                                                className="img img-fluid featured-image mt-5"
+                                                style={{width: '540px', height: 'auto'}}
+                                            />}
+                                            {`${API}/product/photo2/${product.slug}` && <img 
+                                                src={`${API}/product/photo2/${product.slug}`} 
+                                                alt={product.title} 
+                                                className="img img-fluid featured-image mt-5"
+                                                style={{width: '540px', height: 'auto'}}
+                                            />}
+                                            {`${API}/product/photo3/${product.slug}` && <img 
+                                                src={`${API}/product/photo3/${product.slug}`} 
+                                                alt={product.title} 
+                                                className="img img-fluid featured-image mt-5"
+                                                style={{width: '540px', height: 'auto'}}
+                                            />}
+                                            {`${API}/product/photo4/${product.slug}` && <img 
+                                                src={`${API}/product/photo4/${product.slug}`} 
+                                                alt={product.title} 
+                                                className="img img-fluid featured-image mt-5"
+                                                style={{width: '540px', height: 'auto'}}
+                                            />}
+                                            {`${API}/product/photo5/${product.slug}` && <img 
+                                                src={`${API}/product/photo5/${product.slug}`} 
+                                                alt={product.title} 
+                                                className="img img-fluid featured-image mt-5"
+                                                style={{width: '540px', height: 'auto'}}
+                                            />}
+                                            {`${API}/product/photo6/${product.slug}` && <img 
+                                                src={`${API}/product/photo6/${product.slug}`} 
+                                                alt={product.title} 
+                                                className="img img-fluid featured-image mt-5"
+                                                style={{width: '540px', height: 'auto'}}
+                                            />}
                                         </Slider>
-                                       
                                     </div>
                                     <div className="col-sm mt-5">
                                         <small>İlan ID: </small> <small style={{fontWeight: 'bold'}}>  {product._id}</small>
@@ -266,45 +232,30 @@ const SingleProduct = ({ product, query }) => {
                                 </div>
                                 <hr/>
                                 <div className="container">
-                                    <div class="row">
-                                        <div class="col">
-                                            <p className="text-center font-weight-bold display-5">
-                                                Değerli üreticimiz ile iletişime geçerken lütfen dikkat edin!
-                                            </p>
-                                            <p className="text-center">
-                                                Eğer hayvan sahibi ile yüz yüze görüşecekseniz lütfen toplu ya da açık alanlarda görüşmeye çalışın.
-                                                Hayvan sahibinden hayvanını satın almadan önce herhangi bir kapora ödemeyin.
-                                                Sistem uzmanlarımız uç noktalarda fiyat veren hayvan sahiplerini uyarmaktadır. Uygun görülmeyen ilanlar sitemizden ivedilikle kaldırılmaktadır.
-                                                Alacağınız hayvan ile resimdeki uyuşmuyorsa ortamı terk edin.
-                                                cambazim.com'da yer alan kullanıcıların oluşturduğu tüm içerik, görüş ve bilgilerin doğruluğu, eksiksiz ve değişmez olduğu, yayınlanması ile ilgili yasal yükümlülükler içeriği oluşturan kullanıcıya aittir. 
-                                                Bu içeriğin, görüş ve bilgilerin yanlışlık, eksiklik veya yasalarla düzenlenmiş kurallara aykırılığından cambazim.com hiçbir şekilde sorumlu değildir. 
-                                                Sorularınız için ilan sahibi ile irtibata geçebilirsiniz.
-                                            </p>
-                                        </div>
-                                        <div class="col">
-                                            <WrappedMap
-                                                googleMapURL = {`https://maps.googleapis.com/maps/api/js?key=AIzaSyBOLlOXZVdk0T2wMOrKN5IMEnUGRpbMnC8&v=3.exp&libraries=geometry,drawing,places`}
-                                                loadingElement = {<div style={{height: '100%'}}/>}
-                                                containerElement = {<div style={{height: '100%'}} />}
-                                                mapElement = {<div style={{height: '100%'}}/>}
-                                            />
-                                        </div>
-                                    </div>                                    
+                                    <div className="col">
+                                        <p className="text-center font-weight-bold display-5">
+                                            Değerli üreticimiz ile iletişime geçerken lütfen dikkat edin!
+                                        </p>
+                                        <p className="text-center">
+                                            Eğer hayvan sahibi ile yüz yüze görüşecekseniz lütfen toplu ya da açık alanlarda görüşmeye çalışın.
+                                            Hayvan sahibinden hayvanını satın almadan önce herhangi bir kapora ödemeyin.
+                                            Sistem uzmanlarımız uç noktalarda fiyat veren hayvan sahiplerini uyarmaktadır. Uygun görülmeyen ilanlar sitemizden ivedilikle kaldırılmaktadır.
+                                            Alacağınız hayvan ile resimdeki uyuşmuyorsa ortamı terk edin.
+                                            cambazim.com'da yer alan kullanıcıların oluşturduğu tüm içerik, görüş ve bilgilerin doğruluğu, eksiksiz ve değişmez olduğu, yayınlanması ile ilgili yasal yükümlülükler içeriği oluşturan kullanıcıya aittir. 
+                                            Bu içeriğin, görüş ve bilgilerin yanlışlık, eksiklik veya yasalarla düzenlenmiş kurallara aykırılığından cambazim.com hiçbir şekilde sorumlu değildir. 
+                                            Sorularınız için ilan sahibi ile irtibata geçebilirsiniz.
+                                        </p>
+                                    </div>                                
                                 </div>
+                                <hr />
+                                <WrappedMap
+                                    googleMapURL = {`https://maps.googleapis.com/maps/api/js?key=AIzaSyBOLlOXZVdk0T2wMOrKN5IMEnUGRpbMnC8&v=3.exp&libraries=geometry,drawing,places`}
+                                    loadingElement = {<div style={{height: '100%'}}/>}
+                                    containerElement = {<div style={{height: '100%'}} />}
+                                    mapElement = {<div style={{height: '100%'}}/>}
+                                />
                                 <hr/>
-                                {/* Tried to set it, however we could not do it.
-                                    <div className="container">
-                                    <h4 className="text-center pt-5 pb-5 h2">
-                                        İlginizi çekebilecek diğer ilanlar
-                                    </h4>
-                                    {/*<div className="row">{showRelatedBlog()}</div>*/}
-                                    {/*<div className="row">{JSON.stringify(related)}</div>*/}
-                                    {/*JSON.stringify(related)*/}
-                                {/*</div>*/}
                                 <br />
-                                <p className="text-center display-6">
-                                        Copyright © 2020 cambazim.com
-                                </p>
                             </section>
                         </div>
                     </article>

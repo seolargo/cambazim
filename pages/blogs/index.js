@@ -62,7 +62,7 @@ const Blogs = ({blogs, categories, tags, totalBlogs, blogsLimit, blogSkip, route
         return (
             size > 0 && size >= limit && (
                 <button onClick={loadMore} className="btn btn-outline-success btn-lg">
-                    Daha fazlası
+                    Daha Fazla Göster
                 </button>
             )
         );
@@ -113,27 +113,29 @@ const Blogs = ({blogs, categories, tags, totalBlogs, blogsLimit, blogSkip, route
                     <main>
                         <div className="container-fluid">
                             <header>
-                                <div className="col-md-12 pt-3">
+                                <div className="col-md-12 pt-3" id="blog-introduction">
                                     <h1 className="display-4 font-weight-bold text-center">
                                         Cambazım Blog
                                     </h1>
-
                                     <h1 className="display-5 font-weight-bold text-center">
                                         Sektörden Haberler ve En Güncel Bilgiler
                                     </h1>
                                 </div>
-                                <section>
-                                    <div className="pb-5 text-center">
+                                <section id="categories-tags-list">
+                                    <div className="pb-2 text-center">
                                         {showAllCategories()}
+                                    </div>
+                                    <div className="pb-5 text-center">
+                                        {showAllTags()}
                                     </div>
                                 </section>
                             </header>
                         </div>
 
-                        <div className="container-fluid">
+                        <div className="container-fluid" id="blogs">
                             {showAllBlogs()}
                         </div>
-                        <div className="container-fluid">
+                        <div className="container-fluid" id="blogs">
                             {showLoadedBlogs()}
                         </div>
                         <div className="text-center pt-5 pb-5">

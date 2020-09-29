@@ -10,7 +10,7 @@ const Product = () => {
                     <div className="row">
                         
                         <div className="col-md-12 pt-5 pb-5 ml-3">
-                            <h2 style={{color: 'green'}}>Yeni bir ilan oluştur</h2>
+                            <h2 style={{color: 'green'}}>Yeni Bir İlan Oluşturun</h2>
                         </div>
                         
                         <div className="col-md-12">

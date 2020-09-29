@@ -212,13 +212,6 @@ const CreateBlog = ({router}) => {
                         onChange={handleBody}
                     />
                 </div>
-
-                <div>
-                    <button type="submit" className="btn btn-success">
-                        Blogu Yayımla
-                    </button> 
-                </div>
-
             </form>
         );
     };
@@ -258,6 +251,12 @@ const CreateBlog = ({router}) => {
                         <hr />
                         <ul style={{maxHeight: '100px', overflowY: 'scroll'}}>{showTags()}</ul>
                     </div>
+                </div>
+
+                <div>
+                    <button type="submit" className="btn btn-success mt-5">
+                        Blogu Yayımla
+                    </button> 
                 </div>
             </div>
         </div>

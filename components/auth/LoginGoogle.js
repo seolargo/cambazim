@@ -27,7 +27,7 @@ const LoginGoogle = () => {
     };
 
     return (
-        <div className="login-with-google-div">
+        <div className="login-with-google-div" id="login-google">
             <GoogleLogin
                 clientId={`${GOOGLE_CLIENT_ID}`}
                 buttonText="Google ile giriş yap"

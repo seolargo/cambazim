@@ -23,7 +23,8 @@ const CategoryTag = () => {
                     <br />
                         <Tag />
                     </div>
-
+                    <br />
+                    <br />
                 </div>
             </div>
         </Admin>

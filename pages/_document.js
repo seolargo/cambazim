@@ -32,11 +32,11 @@ class MyDocument extends Document {
             <link rel="stylesheet" href="/static/css/styles.css" />
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177255706-1"></script>
             <script dangerouslySetInnerHTML={this.setGoogleTags()} />
-          </Head>
-           <body>
-            <Main />
-            <NextScript />
-          </body>
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
       </Html>
     )
   }

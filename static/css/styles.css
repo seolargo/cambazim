@@ -4,8 +4,8 @@
 */
 #nprogress .bar {
     height: 4px !important;
-    background-color: green;
-    color: green;
+    background-color: green !important;
+    color: green !important;
 }
 
 /*
@@ -27,11 +27,11 @@
     border: 1px solid #8f918f;
 }
 
-.list-notices tr{
+.list-notices tr {
     color: black;
 }
 
-.list-notices tr td{
+.list-notices tr td {
     padding-left: 10px;
 }
 
@@ -52,7 +52,7 @@
 #list-notices-blog-title-type-id {
     width: 200px;
     padding-right: 10px;
-    padding-left: 0px;   
+    padding-left: 0px;
 }
 
 /*
@@ -61,16 +61,16 @@
 #list-notices-whom-type-id {
     width: 200px;
     padding-right: 250px;
-    padding-left: 0px; 
+    padding-left: 0px;
 }
 
 /*
     İlan tarihi
 */
 #list-notices-notice-date-type-id {
-    width: 200px;   
+    width: 200px;
     padding-right: 150px;
-    padding-left: 0px; 
+    padding-left: 0px;
 }
 
 /*
@@ -79,7 +79,7 @@
 #list-notices-show-blog-categories-type-id {
     width: 200px;
     padding-right: 10px;
-    padding-left: 0px; 
+    padding-left: 0px;
 }
 
 /*
@@ -117,7 +117,7 @@ hr {
     border-radius: 0px;
     width: 370px;
     height: 155px;
-    background-image: url("https://upload.wikimedia.org/wikipedia/tr/b/b1/Bursa_%C5%9Fehir_logosu.png");
+    background-image: url('https://upload.wikimedia.org/wikipedia/tr/b/b1/Bursa_%C5%9Fehir_logosu.png');
 }
 /*******************************************************************************/
 
@@ -126,7 +126,7 @@ hr {
     border-radius: 0px;
     width: 700px;
     height: 700px;
-    background-image: url("https://i.ibb.co/Z1pPXgj/pp.jpg");
+    background-image: url('https://i.ibb.co/Z1pPXgj/pp.jpg');
 }
 /*******************************************************************************/
 
@@ -158,7 +158,7 @@ hr {
 
 /****DROPDOWNS******************************************************************/
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -170,7 +170,7 @@ hr {
     text-align: center;
 }
 /*******************************************************************************/
-  
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -183,7 +183,7 @@ hr {
     right: 0;
     background-color: #f9f9f9;
     width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin-bottom: 5px;
 }
@@ -223,37 +223,38 @@ hr {
 }
 
 /********************************CART BADGE***********************/
-.cart-badge, .cart-badge:hover {
+.cart-badge,
+.cart-badge:hover {
     border-radius: 50%;
     padding: 2px;
     font-size: 15px;
     text-decoration: underline;
     font-weight: bold;
-    color: green
+    color: green;
 }
 /*****************************************************************/
 
 #city_id {
     height: 200px;
-    width: 250px;  
+    width: 250px;
     overflow-y: scroll;
 }
 
 #price_id {
     height: 200px;
-    width: 250px;  
+    width: 250px;
     overflow-y: scroll;
 }
 
 #town_id {
     height: 200px;
-    width: 250px;  
+    width: 250px;
     overflow-y: scroll;
 }
 
 #village_id {
     height: 200px;
-    width: 250px;  
+    width: 250px;
     overflow-y: scroll;
 }
 
@@ -278,4 +279,148 @@ hr {
 
 #forgotmypassword {
     margin-left: 20px;
+}
+
+.social-container {
+    padding: 0px 0px;
+}
+
+a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+}
+
+a.social:hover {
+    transform: translateY(-2px);
+}
+
+a.youtube {
+    color: white;
+}
+a.facebook {
+    color: white;
+}
+a.twitter {
+    color: white;
+}
+a.instagram {
+    color: white;
+}
+
+@media only screen and (max-width: 1680px) {
+    #search-bar {
+        margin-left: 200px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #search-bar {
+        margin-left: 200px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    #search-bar {
+        margin-left: 300px;
+    }
+}
+
+@media only screen and (max-width: 938px) {
+    #search-bar {
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 480px) {
+    #iletisim-footer {
+        margin-left: 20px;
+    }
+    #kullanim-footer {
+        margin-left: 20px;
+    }
+    #bizden-footer {
+        margin-left: 20px;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .imagesThree {
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: 478;
+        height: auto;
+    }
+    #show-all-notices {
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    #detailed-search {
+        margin-left: 100px;
+    }
+    #detayli-arama {
+        width: 400px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+
+    #signup-input {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #scroll {
+        margin-right: 200px;
+    }
 }

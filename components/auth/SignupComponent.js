@@ -69,14 +69,14 @@ const SignupComponent = () => {
         setValues({...values, error: false, [name]: e.target.value});
     };
 
-    const showLoading = () => (loading ? <div className="alert alert-info">Yükleniyor...</div> : '');
-    const showError = () => (error ? <div className="alert alert-info">{error}...</div> : '');
-    const showMessage = () => (message ? <div className="alert alert-info">{message}...</div> : '');
+    const showLoading = () => (loading ? <div className="alert alert-info" id="signup-input">Yükleniyor...</div> : '');
+    const showError = () => (error ? <div className="alert alert-info" id="signup-input">{error}...</div> : '');
+    const showMessage = () => (message ? <div className="alert alert-info" id="signup-input">{message}...</div> : '');
 
     const signupForm = () => {
         return (
             <form onSubmit={handleSubmit}>
-                <div className="form-group">
+                <div className="form-group" id="signup-input">
                     <input
                         value={name} 
                         onChange={handleChange('name')} 
@@ -86,7 +86,7 @@ const SignupComponent = () => {
                     />
                 </div>
 
-                <div className="form-group">
+                <div className="form-group" id="signup-input">
                     <input
                         value={email}  
                         onChange={handleChange('email')} 
@@ -96,7 +96,7 @@ const SignupComponent = () => {
                     />
                 </div>
 
-                <div className="form-group">
+                <div className="form-group" id="signup-input"> 
                     <input 
                         value={password} 
                         onChange={handleChange('password')} 
@@ -105,12 +105,12 @@ const SignupComponent = () => {
                         placeholder="Şifrenizi girin"
                     />
                 </div>
-                <p>Şifreniz en az 6 haneli olmalı ve içinde en az 1 adet rakam olmalı.</p>
-                <div className="form-group">
+                <p id="signup-input">Şifreniz en az 6 haneli olmalı ve içinde en az 1 adet rakam olmalı.</p>
+                <div className="form-group" id="signup-input">
                     <label htmlFor="terms">Bu siteye kayıt olarak <a href="http://www.cambazim.com/uyeliksozlesmesi">üyelik sözleşmesini</a>, <a href="http://www.cambazim.com/kvkk">KVKK'yı</a>, <a href="http://www.cambazim.com/cerezpolitikasi">çerez politikamızı</a> ve <a href="http://www.cambazim.com/ilanreklamvermesozlesmesi">ilan-reklam verme sözleşmesini</a> kabul etmiş olursunuz.</label>
                 </div>
 
-                <div>
+                <div id="signup-input">
                     <button className="btn btn-success">Kayıt Ol</button>
                 </div>
             </form>
@@ -124,9 +124,11 @@ const SignupComponent = () => {
             {showMessage()}
             {showForm && signupForm()}
             <br />
-            <Link href="/auth/password/forgot">
-                Şifremi unuttum
-            </Link>
+            <div id="signup-input">
+                <Link href="/auth/password/forgot">
+                    Şifremi unuttum
+                </Link>
+            </div>
             <br/>
             <br/>
             <br/>

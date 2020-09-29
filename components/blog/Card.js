@@ -46,7 +46,6 @@ const Card = ({ blog }) => {
             </section>
 
             <div className="row">
-                
                 <div className="col-md-4">
                     <section>
                         <img
@@ -63,7 +62,7 @@ const Card = ({ blog }) => {
                     <section>
                         <div className="pb-3">{renderHTML(blog.excerpt)}</div>
                         <Link href={`/blogs/${blog.slug}`}>
-                            <a className="btn btn-success pt-2">Daha fazla</a>
+                            <a className="btn btn-success pt-2">Haberin Detayı İçin Tıklayın</a>
                         </Link>
                     </section>
                 </div>

@@ -3,7 +3,7 @@ import Admin from '../../../components/auth/Admin';
 import ProductUpdate from '../../../components/crud/ProductUpdate';
 import Link from 'next/link';
 
-const Blog = () => {
+const Product = () => {
     return (
         <Layout>
             <Admin>
@@ -23,4 +23,4 @@ const Blog = () => {
 };
 
 
-export default Blog;
+export default Product;

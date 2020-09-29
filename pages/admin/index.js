@@ -49,7 +49,9 @@ const AdminIndex = () => {
                                     <a>Profilinizi Güncelleyin</a>
                                 </Link>
                             </li>
-                            
+                            <br />
+                            <br />
+                            <br />  
                         </ul>
                 </div>
             </div>

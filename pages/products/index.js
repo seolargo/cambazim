@@ -60,7 +60,7 @@ const Products = ({products, totalProducts, productsLimit, productSkip, router})
         return (
             size > 0 && size >= limit && (
             <button onClick={loadMore} className="btn btn-outline-success btn-lg">
-                Daha fazlası
+                Daha Fazla Göster
             </button>
         )
         );
@@ -92,45 +92,13 @@ const Products = ({products, totalProducts, productsLimit, productSkip, router})
                 <main>
                     <div className="container-fluid">
                         <header>
-                            <div className="col-md-12 pt-3">
+                            <div className="col-md-12 pt-3" id="blog-introduction">
                                 <h1 className="display-4 font-weight-bold text-center">
-                                    Cambazım Blog
-                                </h1>
-
-                                <h1 className="display-5 font-weight-bold text-center">
-                                    Sektörden Haberler ve En Güncel Bilgiler
+                                    Tüm İlanları Görüntülüyorsunuz
                                 </h1>
                             </div>
                         </header>
                     </div>
-
-                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th id="header-animal-image-id">Hayvanın Resmi</th>
-                                <th id="header-animal-type-id">Hayvan Tipi</th>
-                                <th id="header-notice-header-id">İlan Başlığı</th>
-                                <th>Kimden</th>
-                                <th>Fiyat</th>
-                                <th>İlan Tarihi</th>
-                                <th>Ülke</th>
-                                <th>İl</th>
-                                <th>İlçe</th>
-                                <th>Köy</th>
-                                <th>Pazarlık</th>
-                                <th>Kimden</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                        </tbody>
-                    </table>
-
                     <div className="container-fluid">
                         {showAllProducts()}
                     </div>

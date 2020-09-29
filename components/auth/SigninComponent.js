@@ -59,7 +59,7 @@ const SigninComponent = () => {
     const signinForm = () => {
         return (
             <form onSubmit={handleSubmit}>
-                <div className="form-group">
+                <div className="form-group" id="email-input">
                     <input
                         value={email}  
                         onChange={handleChange('email')} 
@@ -69,7 +69,7 @@ const SigninComponent = () => {
                     />
                 </div>
 
-                <div className="form-group">
+                <div className="form-group" id="password-input">
                     <input 
                         value={password} 
                         onChange={handleChange('password')} 
@@ -78,10 +78,10 @@ const SigninComponent = () => {
                         placeholder="Şifrenizi girin"
                     />
                 </div>
-                <p>Şifreniz en az 6 haneliydi ve içinde en az 1 adet rakam vardı ;)</p>
+                <p id="password-explanation">Şifreniz en az 6 haneliydi ve içinde en az 1 adet rakam vardı ;)</p>
                 <br/>
                 <div>
-                    <button className="btn btn-success">Giriş Yap</button>
+                    <button className="btn btn-success" id="giris-yap-button">Giriş Yap</button>
                 </div>
             </form>
         );
@@ -98,9 +98,11 @@ const SigninComponent = () => {
             <br />
             {/*<Facebook />*/}
             <br />
-            <Link href="/auth/password/forgot">
-                Şifremi sıfırla
-            </Link>
+            <div id="forgot-password">
+                <Link href="/auth/password/forgot">
+                    Şifremi Unuttum
+                </Link>
+            </div>
             <br/>
             <br/>
             <br/>
