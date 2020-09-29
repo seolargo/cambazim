@@ -752,6 +752,7 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
             <div id="scroll">
                 <Scroll showBelow={250} />
             </div>
+            {/* RESİM */}
             <div className="imagesThree"></div>
             <div className="container">
                 <div className="row">
@@ -1310,7 +1311,7 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
                             </div>
                     */}
                     <div className="col-8" id="show-all-notices">
-                        <h2 className="mb-4" style={{ textAlign: 'center', color: 'green' }}>
+                        <h2 className="mb-4" style={{ textAlign: 'left', color: 'green' }}>
                             İlanları Görüntülüyorsunuz
                         </h2>
                         <div className="row">

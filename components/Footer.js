@@ -17,7 +17,7 @@ const Footer = () => {
     return (
         <React.Fragment>
             <MDBFooter color="blue-grey" className="page-footer font-small lighten-5 pt-0">
-                <div style={{ backgroundColor: 'green' }}>
+                <div style={{ backgroundColor: 'green' }} id="sosyal-medya-kanallarimiz-text">
                     <MDBContainer>
                         <MDBRow className="py-4 d-flex align-items-center">
                             <MDBCol md="6" lg="5" className="text-center text-md-left mb-4 mb-md-0">
@@ -52,14 +52,14 @@ const Footer = () => {
                         {/*<div className="bursalogo"></div>
                     </MDBCol>*/}
                         <MDBCol md="3" lg="2" xl="2" className="dark-grey-text" id="bizden-footer">
-                            <h6 className="text-uppercase font-weight-bold">
+                            <h6 className="text-uppercase font-weight-bold" style={{ textAlign: 'center' }}>
                                 <strong>BİZDEN</strong>
                             </h6>
                             <hr
                                 className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
                                 style={{ width: '60px' }}
                             />
-                            <p>
+                            <p style={{ textAlign: 'center' }}>
                                 <a href="/aboutus" className="dark-grey-text" style={{ color: 'green' }}>
                                     Hakkımızda
                                 </a>
@@ -79,6 +79,7 @@ const Footer = () => {
                                     İletişim
                                 </a>
                             </p>
+                            <br />
                         </MDBCol>
                         <MDBCol md="3" lg="2" xl="2" className="dark-grey-text" id="kullanim-footer">
                             <h6 className="text-uppercase font-weight-bold">
@@ -103,6 +104,7 @@ const Footer = () => {
                                     Yatırımcımız Olun
                                 </a>
                             </p>
+                            <br />
                         </MDBCol>
                         <MDBCol md="4" lg="3" xl="3" className="dark-grey-text" id="iletisim-footer">
                             <h6 className="text-uppercase font-weight-bold">
@@ -124,6 +126,7 @@ const Footer = () => {
                                 <AiFillPhone color="green" />
                                 <i className="fa fa-phone" /> + 90 536 983 55 31
                             </p>
+                            <br />
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer>

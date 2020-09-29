@@ -8,6 +8,11 @@
     color: green !important;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 /*
     Place where the user publishes his detailed notice.
     By setting the min-height, we can expand or minimize the area of the notice page.
@@ -423,10 +428,11 @@ a.instagram {
     #signup-input {
         margin-left: 20px;
     }
+
+    #sosyal-medya-kanallarimiz-text {
+        width: 414px;
+    }
 }
 
 @media only screen and (max-width: 360px) {
-    #scroll {
-        margin-right: 200px;
-    }
 }
