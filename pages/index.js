@@ -1311,7 +1311,7 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
                             </div>
                     */}
                     <div className="col-8" id="show-all-notices">
-                        <h2 className="mb-4" style={{ textAlign: 'left', color: 'green' }}>
+                        <h2 className="mb-4" style={{ textAlign: 'left', color: 'green' }} id="show-all-notices-text">
                             İlanları Görüntülüyorsunuz
                         </h2>
                         <div className="row">

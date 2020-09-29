@@ -348,13 +348,13 @@ a.instagram {
 
 @media only screen and (max-width: 480px) {
     #iletisim-footer {
-        margin-left: 20px;
+        display: block;
     }
     #kullanim-footer {
-        margin-left: 20px;
+        display: block;
     }
     #bizden-footer {
-        margin-left: 20px;
+        display: block;
     }
     .bursalogo {
         margin-left: 50px;
@@ -398,13 +398,16 @@ a.instagram {
     }
     #show-all-notices {
         margin-top: 50px;
-        margin-left: 100px;
+        margin-left: 60px;
     }
     #detailed-search {
-        margin-left: 100px;
+        margin-left: 50px;
     }
     #detayli-arama {
-        width: 400px;
+        width: 200px;
+    }
+    #show-all-notices-text {
+        margin-left: -15px;
     }
     #price_id {
         width: 400px;
