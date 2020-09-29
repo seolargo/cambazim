@@ -300,12 +300,18 @@ a.youtube {
 }
 a.facebook {
     color: white;
+    width: 20px;
+    height: 20px;
 }
 a.twitter {
     color: white;
+    width: 20px;
+    height: 20px;
 }
 a.instagram {
     color: white;
+    width: 20px;
+    height: 20px;
 }
 
 @media only screen and (max-width: 1680px) {

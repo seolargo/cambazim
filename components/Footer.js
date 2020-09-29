@@ -11,7 +11,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 import { AiFillMail, AiFillPhone, AiOutlineHome } from 'react-icons/ai';
 
 //import SocialFollow from './SocialFollow';
-import { FaFacebook } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -24,12 +24,22 @@ const Footer = () => {
                                 <h6 className="mb-0 white-text" style={{ color: 'white' }}>
                                     <p style={{ paddingRight: '10px' }}>Sosyal medya kanallarımıza bir göz atın!</p>
                                     {/*<SocialFollow />*/}
-                                    <a
-                                        href="https://www.facebook.com/Cambazim-113928107117730/"
-                                        className="facebook social"
-                                    >
-                                        <FaFacebook />
-                                    </a>
+                                    <div className="social-container">
+                                        <a
+                                            href="https://www.facebook.com/Cambazim-113928107117730/"
+                                            className="facebook social"
+                                        >
+                                            <FaFacebook size="2x" />
+                                        </a>
+                                        {'     '}
+                                        <a href="https://twitter.com/cambazimtr" className="twitter social">
+                                            <FaTwitter size="2x" />
+                                        </a>
+                                        {'     '}
+                                        <a href="https://www.instagram.com/p/CE9WKPFHMgM/" className="instagram social">
+                                            <FaInstagram size="2x" />
+                                        </a>
+                                    </div>
                                 </h6>
                             </MDBCol>
                         </MDBRow>
