@@ -112,6 +112,8 @@ import villagesZonguldak from './villagesZonguldak.json';
 
 import Loader from 'react-loader-spinner';
 
+import { RadioBoxForPricesNew } from './RadioBoxForPricesNew';
+
 //import RadioBoxForVillages from './RadioBoxForVillages';
 //import RadioBoxForCities from './RadioBoxForCities';
 //import RadioBoxForTowns from './RadioBoxForTowns';
@@ -604,15 +606,36 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
     const RadioBoxForCities = ({ cities, handleFilters }) => {
         const [value, setValue] = useState(0);
         const handleChange = (event) => {
-            handleFilters(event.target.value);
             setValue(event.target.value);
+            handleFilters(event.target.value);
         };
+
+        /*<label>Options:</label>
+                            <input type="radio" name="radSize" id="sizeSmall" value="small" />
+                            <label for="sizeSmall">Small</label>
+
+                            <input type="radio" name="radSize" id="sizeMed" value="medium" />
+                            <label for="sizeMed">Medium</label>
+
+                            <input type="radio" name="radSize" id="sizeLarge" value="large" />
+        <label for="sizeLarge">Large</label>*/
+
         return cities.map((ci, i) => (
             <li key={i} className="list-unstyled">
-                <input onChange={handleChange} value={`${ci.name}`} name={ci} type="radio" className="mr-2" />
-                <label className="form-check-label">{ci.name}</label>
+                <input
+                    type="radio"
+                    name="cities"
+                    id={`${ci.name}`}
+                    onChange={handleChange}
+                    value={`${ci.name}`}
+                    className="mr-2"
+                />
+                <label className="form-check-label" htmlFor={`${ci.name}`}>
+                    {ci.name}
+                </label>
             </li>
         ));
+        //return null;
     };
 
     const RadioBoxForTowns = ({ selectedCity, towns, handleFilters }) => {
@@ -624,7 +647,7 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
         return towns.map((t, i) =>
             t.cname === selectedCity ? (
                 <li key={i} className="list-unstyled">
-                    <input onChange={handleChange} value={`${t.name}`} name={t} type="radio" className="mr-2" />
+                    <input onChange={handleChange} value={`${t.name}`} name={t.name} type="radio" className="mr-2" />
                     <label className="form-check-label">{t.name}</label>
                 </li>
             ) : (
@@ -658,7 +681,7 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
             setValue(event.target.value);
         };
         return animals.map((a, i) => (
-            <li key={i} className="list-unstyled">
+            <li key={i} className="list-unstyled" id="cc-selector">
                 <input onChange={handleChange} value={`${a.usttur}`} name={a} type="radio" className="mr-2" />
                 <label className="form-check-label">{a.usttur}</label>
             </li>
@@ -782,7 +805,7 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
                         )}
                         <h4 style={{ color: 'green' }}>Fiyat</h4>
                         <ul id="price_id">
-                            <RadioBoxForPrices
+                            <RadioBoxForPricesNew
                                 prices={prices}
                                 handleFilters={(filters) => handleFilters(filters, 'price')}
                             />

@@ -52,14 +52,14 @@ const Footer = () => {
                         {/*<div className="bursalogo"></div>
                     </MDBCol>*/}
                         <MDBCol md="3" lg="2" xl="2" className="dark-grey-text" id="bizden-footer">
-                            <h6 className="text-uppercase font-weight-bold" style={{ textAlign: 'center' }}>
+                            <h6 className="text-uppercase font-weight-bold">
                                 <strong>BİZDEN</strong>
                             </h6>
                             <hr
                                 className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
                                 style={{ width: '60px' }}
                             />
-                            <p style={{ textAlign: 'center' }}>
+                            <p>
                                 <a href="/aboutus" className="dark-grey-text" style={{ color: 'green' }}>
                                     Hakkımızda
                                 </a>
