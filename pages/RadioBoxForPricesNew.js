@@ -101,10 +101,14 @@ export const RadioBoxForPricesNew = ({ prices, handleFilters }) => {
         setValue(event.target.value);
     };
 
-    return prices.map((p, i) => (
-        <li key={i} className="list-unstyled">
-            <input onChange={handleChange} value={`${p._id}`} name={p} type="radio" className="mr-2" />
-            <label className="form-check-label">{p.name}</label>
-        </li>
-    ));
+    return prices
+        ? prices.map((p, i) => (
+              <li key={i} className="list-unstyled">
+                  <input onChange={handleChange} value={`${p._id}`} name={p} type="radio" className="mr-2" />
+                  <label className="form-check-label">{p.name}</label>
+              </li>
+          ))
+        : null;
 };
+
+export default RadioBoxForPricesNew;
