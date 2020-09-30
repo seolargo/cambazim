@@ -319,6 +319,88 @@ a.instagram {
     height: 20px;
 }
 
+h1 {
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.4em 1em;
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+}
+
+.rev-block {
+    position: fixed;
+    top: 175px;
+}
+
+.rev-block span {
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 1.4s;
+}
+
+.rev-block::after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: green;
+    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s;
+}
+
+@keyframes rev-block {
+    0% {
+        left: 0;
+        width: 0%;
+    }
+    50% {
+        left: 0;
+        width: 100%;
+    }
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+}
+
+@keyframes appear-text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#onemore {
+    top: 51%;
+    left: 58%;
+    position: fixed;
+    top: 225px;
+}
+
+#onemore span {
+    animation-delay: 2s;
+}
+
+#onemore.rev-block:after {
+    background: brown;
+    animation-delay: 1.4s;
+}
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 20px;
+        padding: 0.4em;
+    }
+}
+
 @media only screen and (max-width: 1680px) {
     #search-bar {
         margin-left: 200px;
@@ -391,10 +473,7 @@ a.instagram {
         margin-right: 20px;
     }
     .imagesThree {
-        margin-left: 0px;
-        margin-right: 0px;
-        max-width: 478;
-        height: auto;
+        display: none;
     }
     #show-all-notices {
         margin-top: 50px;
@@ -434,6 +513,29 @@ a.instagram {
 
     #sosyal-medya-kanallarimiz-text {
         width: 414px;
+    }
+
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        padding-right: 20px;
+        text-align: 'justify';
+    }
+
+    .list-mobile-picture {
+        width: 100%;
+        height: 100%;
+        object-fit: 'contain';
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1601496362/pp_xronu3.jpg');
+    }
+
+    .cambazim-logo-309-48 {
+        width: auto;
+        text-align: center;
+        padding: 20px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 

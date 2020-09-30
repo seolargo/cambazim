@@ -28,6 +28,11 @@ import * as ReactBootStrap from 'react-bootstrap';
 
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
+import { Slide } from 'react-awesome-reveal';
+
+import { GiFarmer } from 'react-icons/gi';
+import { BsFillPersonFill, BsSearch } from 'react-icons/bs';
+
 import villagesAdana from './villagesAdana.json';
 import villagesAdiyaman from './villagesAdiyaman.json';
 import villagesAfyonkarahisar from './villagesAfyonkarahisar.json';
@@ -775,8 +780,42 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
             <div id="scroll">
                 <Scroll showBelow={250} />
             </div>
+            {/*<h1 className="rev-block" style={{ color: '#02a500' }}>
+                <span>Cambazım</span>
+            </h1>
+            <h1 className="rev-block" id="onemore" style={{ color: '#02a500' }}>
+                <span>hayvancılığa dair her şey</span>
+            </h1>*/}
             {/* RESİM */}
+            {/*<br />
+            <br />
+            <br />
+            <br />
+            <br />*/}
             <div className="imagesThree"></div>
+            <div className="cambazim-logo-309-48">
+                <p id="my-image">
+                    <img src="https://res.cloudinary.com/dmci3ih0i/image/upload/v1601497430/cambazim-logo-309x48_egsq1i.png" />
+                </p>
+            </div>
+            {/*<div style={{ textAlign: 'center', color: 'green' }} id="list-mobile">
+                Hayvancılığa dair her şey
+                <br />
+                <br />
+                <br />
+            </div>*/}
+            <div className="list-mobile">
+                <div style={{ color: 'green', marginLeft: '60px', marginBottom: '10px' }} id="list-mobile">
+                    <GiFarmer size={32} /> Emekçilerimiz! Hayvanlarınızı daha yüksek ücretlerle satın. Üstelik sizlerden
+                    komisyon almıyoruz!
+                </div>
+                <div style={{ color: 'green', marginLeft: '60px', marginBottom: '10px' }} id="list-mobile">
+                    <BsFillPersonFill size={32} /> Virüsten kaçının! Çiftlik hayvanlarına 'uzaktan' bakın.
+                </div>
+                <div style={{ color: 'green', marginLeft: '60px', marginBottom: '10px' }} id="list-mobile">
+                    <BsSearch size={32} /> Detaylı arama yaparak çevrenizdeki hayvanları görüntüleyin!
+                </div>
+            </div>
             <div className="container">
                 <div className="row">
                     <div className="col-4" id="detailed-search">
