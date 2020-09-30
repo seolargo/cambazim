@@ -28,8 +28,6 @@ import * as ReactBootStrap from 'react-bootstrap';
 
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
-import { Slide } from 'react-awesome-reveal';
-
 import { GiFarmer } from 'react-icons/gi';
 import { BsFillPersonFill, BsSearch } from 'react-icons/bs';
 
