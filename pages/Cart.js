@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import CartComponent from '../components/auth/CartComponent';
 
-const Cart = () => {
+const cart = () => {
     return (
         <Layout>
             <div className="row">
@@ -13,4 +13,4 @@ const Cart = () => {
     );
 };
 
-export default Cart;
+export default cart;
