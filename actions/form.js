@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch';
 import { API } from '../config';
-import {isAuth} from './auth';
+import { isAuth } from './auth';
 
 export const emailContactForm = (data) => {
     let emailEndpoint;
@@ -8,7 +8,7 @@ export const emailContactForm = (data) => {
     if (data.authorEmail) {
         //If we have admin role...
         emailEndpoint = `${API}/contact-product-author`;
-    } else if (isAuth() && isAuth().role === 0) {
+    } else {
         emailEndpoint = `${API}/contact`;
     }
 
@@ -16,12 +16,13 @@ export const emailContactForm = (data) => {
         method: 'POST',
         headers: {
             Accept: 'application/json',
-            'Content-Type': `application/json`
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
     })
-        .then(response => {
+        .then((response) => {
+            console.log(JSON.stringify(data)); //{"name": "ömer yavuz", "email": "mail.omerfaruk@gmail.com", "message": "ömerr"}
             return response.json();
         })
-        .catch(err => console.log(err));
+        .catch((err) => console.log(err)); //SyntaxError: Unexpected token < in JSON at position 0
 };

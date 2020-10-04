@@ -10,6 +10,21 @@ import Layout from '../components/Layout';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 import { AiFillMail, AiFillPhone, AiOutlineHome } from 'react-icons/ai';
 
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    NavbarText,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem
+} from 'reactstrap';
+
 //import SocialFollow from './SocialFollow';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
@@ -22,7 +37,7 @@ const Footer = () => {
                         <MDBRow className="py-4 d-flex align-items-center">
                             <MDBCol md="6" lg="5" className="text-center text-md-left mb-4 mb-md-0">
                                 <h6 className="mb-0 white-text" style={{ color: 'white' }}>
-                                    <p style={{ paddingRight: '10px' }}>Sosyal medya kanallarımıza bir göz atın!</p>
+                                    <p id="gozat">Sosyal medya kanallarımıza göz atın!</p>
                                     {/*<SocialFollow />*/}
                                     <div className="social-container">
                                         <a
@@ -130,7 +145,7 @@ const Footer = () => {
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer>
-                <div className="footer-copyright text-center py-3">
+                <div className="footer-copyright text-center py-3" id="copyright">
                     <MDBContainer fluid>
                         &copy; {new Date().getFullYear()} Copyright:{' '}
                         <a href="http://www.cambazim.com"> cambazim.com </a>

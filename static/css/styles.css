@@ -1,506 +1,987 @@
-/*
+#text-inside-photo-button {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@media only screen and (min-width: 280px) and (max-width: 359px) {
+    /*
     NOTE:
     This CSS file targets all the project.
-*/
-#nprogress .bar {
-    height: 4px !important;
-    background-color: green !important;
-    color: green !important;
-}
+    */
+    #nprogress .bar {
+        height: 4px !important;
+        background-color: green !important;
+        color: green !important;
+    }
 
-html,
-body {
-    overflow-x: hidden;
-}
+    html,
+    body {
+        overflow-x: hidden;
+    }
 
-/*
+    /*
     Place where the user publishes his detailed notice.
     By setting the min-height, we can expand or minimize the area of the notice page.
 */
-.ql-editor {
-    min-height: 300px;
-}
+    .ql-editor {
+        min-height: 300px;
+    }
 
-.featured-image {
-    /*width: 30%;*/
-    width: 50%;
-    height: 100%;
+    .featured-image {
+        /*width: 30%;*/
+        width: 50%;
+        height: 100%;
 
-    object-fit: cover;
-    /*margin-bottom: 20px;*/
-    margin-left: 135px;
-    border: 1px solid #8f918f;
-}
+        object-fit: cover;
+        /*margin-bottom: 20px;*/
+        margin-left: 135px;
+        border: 1px solid #8f918f;
+    }
 
-.list-notices tr {
-    color: black;
-}
+    .list-notices tr {
+        color: black;
+    }
 
-.list-notices tr td {
-    padding-left: 10px;
-}
+    .list-notices tr td {
+        padding-left: 10px;
+    }
 
-#list-notices-image-id {
-    padding-left: 20px;
-    padding-bottom: 10px;
-}
+    #list-notices-image-id {
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
 
-#list-notices-animal-type-id {
-    width: 200px;
-    padding-left: 0px;
-    padding-right: 300px;
-}
+    #list-notices-animal-type-id {
+        width: 200px;
+        padding-left: 0px;
+        padding-right: 300px;
+    }
 
-/*
+    /*
     İlan başlığı
 */
-#list-notices-blog-title-type-id {
-    width: 200px;
-    padding-right: 10px;
-    padding-left: 0px;
-}
+    #list-notices-blog-title-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
 
-/*
+    /*
     Kimden
 */
-#list-notices-whom-type-id {
-    width: 200px;
-    padding-right: 250px;
-    padding-left: 0px;
-}
+    #list-notices-whom-type-id {
+        width: 200px;
+        padding-right: 250px;
+        padding-left: 0px;
+    }
 
-/*
+    /*
     İlan tarihi
 */
-#list-notices-notice-date-type-id {
-    width: 200px;
-    padding-right: 150px;
-    padding-left: 0px;
-}
+    #list-notices-notice-date-type-id {
+        width: 200px;
+        padding-right: 150px;
+        padding-left: 0px;
+    }
 
-/*
+    /*
     Ülke
 */
-#list-notices-show-blog-categories-type-id {
-    width: 200px;
-    padding-right: 10px;
-    padding-left: 0px;
-}
+    #list-notices-show-blog-categories-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
 
-/*
+    /*
     Şehir
 */
-#list-notices-show-blog-tags-type-id {
-    width: 200px;
-    padding-right: 10px;
-    padding-left: 0px;
-}
-
-#header-animal-image-id {
-    width: 200px;
-    padding-left: 30px;
-}
-
-#header-animal-type-id {
-    width: 200px;
-    padding-left: 30px;
-}
-
-#header-notice-header-id {
-    width: 200px;
-    padding-left: 30px;
-}
-
-hr {
-    text-align: left;
-    background-color: green;
-    width: 0px;
-}
-
-/****BURSALOGO****************************************************************/
-.bursalogo {
-    border-radius: 0px;
-    width: 370px;
-    height: 155px;
-    background-image: url('https://upload.wikimedia.org/wikipedia/tr/b/b1/Bursa_%C5%9Fehir_logosu.png');
-}
-/*******************************************************************************/
-
-/****CAMBAZIM LOGO**************************************************************/
-.cambazimlogo {
-    border-radius: 0px;
-    width: 700px;
-    height: 700px;
-    background-image: url('https://i.ibb.co/Z1pPXgj/pp.jpg');
-}
-/*******************************************************************************/
-
-/****HEADER*********************************************************************/
-.imagesThree {
-    border-radius: 0px;
-    width: 1120px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    opacity: 1;
-    border-radius: 8px;
-    background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600125624/Screenshot_2_eovois.png');
-}
-/*******************************************************************************/
-
-/****INITIAL PROFILE PICTURE****************************************************/
-.initialProfilePicture {
-    border-radius: 0px;
-    width: 300px;
-    height: auto;
-    background-repeat: no-repeat;
-    background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600691160/initialProfilePicture.png');
-}
-/*******************************************************************************/
-
-/*******************************************************************************/
-
-/****DROPDOWNS******************************************************************/
-.dropbtn {
-    background-color: #4caf50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 5px;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-}
-/*******************************************************************************/
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 5px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: #f9f9f9;
-    width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    margin-bottom: 5px;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-    margin-bottom: 5px;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-    margin-bottom: 5px;
-}
-
-#pictureBlog {
-    border: 1px solid green;
-}
-
-#blogImageCenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 65%;
-    border-color: green;
-}
-
-/********************************CART BADGE***********************/
-.cart-badge,
-.cart-badge:hover {
-    border-radius: 50%;
-    padding: 2px;
-    font-size: 15px;
-    text-decoration: underline;
-    font-weight: bold;
-    color: green;
-}
-/*****************************************************************/
-
-#city_id {
-    height: 200px;
-    width: 250px;
-    overflow-y: scroll;
-}
-
-#price_id {
-    height: 200px;
-    width: 250px;
-    overflow-y: scroll;
-}
-
-#town_id {
-    height: 200px;
-    width: 250px;
-    overflow-y: scroll;
-}
-
-#village_id {
-    height: 200px;
-    width: 250px;
-    overflow-y: scroll;
-}
-
-#signinSignup {
-    color: grey;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-#adminPanel {
-    cursor: pointer;
-    padding-left: 5px;
-}
-
-#appname:hover {
-    cursor: pointer;
-}
-
-#bakilacaklarlistem:hover {
-    cursor: pointer;
-}
-
-#forgotmypassword {
-    margin-left: 20px;
-}
-
-.social-container {
-    padding: 0px 0px;
-}
-
-a.social {
-    margin: 0 1rem;
-    transition: transform 250ms;
-    display: inline-block;
-}
-
-a.social:hover {
-    transform: translateY(-2px);
-}
-
-a.youtube {
-    color: white;
-}
-a.facebook {
-    color: white;
-    width: 20px;
-    height: 20px;
-}
-a.twitter {
-    color: white;
-    width: 20px;
-    height: 20px;
-}
-a.instagram {
-    color: white;
-    width: 20px;
-    height: 20px;
-}
-
-h1 {
-    font-family: 'Noto Serif', serif;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 0.4em 1em;
-    position: absolute;
-    top: 40%;
-    left: 46%;
-    transform: translate(-50%, -50%);
-}
-
-.rev-block {
-    position: fixed;
-    top: 175px;
-}
-
-.rev-block span {
-    opacity: 0;
-    animation: appear-text 0.0001s linear forwards;
-    animation-delay: 1.4s;
-}
-
-.rev-block::after {
-    content: '';
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    background: green;
-    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-    animation-delay: 1s;
-}
-
-@keyframes rev-block {
-    0% {
-        left: 0;
-        width: 0%;
+    #list-notices-show-blog-tags-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
     }
-    50% {
+
+    #header-animal-image-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-animal-type-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-notice-header-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    hr {
+        text-align: left;
+        background-color: green;
+        width: 0px;
+    }
+
+    /****BURSALOGO****************************************************************/
+    .bursalogo {
+        border-radius: 0px;
+        width: 370px;
+        height: 155px;
+        background-image: url('https://upload.wikimedia.org/wikipedia/tr/b/b1/Bursa_%C5%9Fehir_logosu.png');
+    }
+    /*******************************************************************************/
+
+    /****CAMBAZIM LOGO**************************************************************/
+    .cambazimlogo {
+        border-radius: 0px;
+        width: 700px;
+        height: 700px;
+        background-image: url('https://i.ibb.co/Z1pPXgj/pp.jpg');
+    }
+    /*******************************************************************************/
+
+    /****HEADER*********************************************************************/
+    .imagesThree {
+        border-radius: 0px;
+        width: 1120px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        opacity: 1;
+        border-radius: 8px;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600125624/Screenshot_2_eovois.png');
+    }
+    /*******************************************************************************/
+
+    /****INITIAL PROFILE PICTURE****************************************************/
+    .initialProfilePicture {
+        border-radius: 0px;
+        width: 300px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600691160/initialProfilePicture.png');
+    }
+    /*******************************************************************************/
+
+    /*******************************************************************************/
+
+    /****DROPDOWNS******************************************************************/
+    .dropbtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    }
+    /*******************************************************************************/
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        margin-bottom: 5px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+        margin-bottom: 5px;
+    }
+
+    #pictureBlog {
+        border: 1px solid green;
+    }
+
+    #blogImageCenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        border-color: green;
+    }
+
+    /********************************CART BADGE***********************/
+    .cart-badge,
+    .cart-badge:hover {
+        border-radius: 50%;
+        padding: 2px;
+        font-size: 15px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: green;
+    }
+    /*****************************************************************/
+
+    #city_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #price_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #town_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #village_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #signinSignup {
+        color: grey;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #adminPanel {
+        cursor: pointer;
+        padding-left: 5px;
+    }
+
+    #appname:hover {
+        cursor: pointer;
+    }
+
+    #bakilacaklarlistem:hover {
+        cursor: pointer;
+    }
+
+    #forgotmypassword {
+        margin-left: 20px;
+    }
+
+    .social-container {
+        padding: 0px 0px;
+    }
+
+    a.social {
+        margin: 0 1rem;
+        transition: transform 250ms;
+        display: inline-block;
+    }
+
+    a.social:hover {
+        transform: translateY(-2px);
+    }
+
+    a.youtube {
+        color: white;
+    }
+    a.facebook {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.twitter {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.instagram {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+
+    h1 {
+        font-family: 'Noto Serif', serif;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0.4em 1em;
+        position: absolute;
+        top: 40%;
+        left: 46%;
+        transform: translate(-50%, -50%);
+    }
+
+    .rev-block {
+        position: fixed;
+        top: 175px;
+    }
+
+    .rev-block span {
+        opacity: 0;
+        animation: appear-text 0.0001s linear forwards;
+        animation-delay: 1.4s;
+    }
+
+    .rev-block::after {
+        content: '';
+        top: 0;
         left: 0;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: green;
+        animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes rev-block {
+        0% {
+            left: 0;
+            width: 0%;
+        }
+        50% {
+            left: 0;
+            width: 100%;
+        }
+        100% {
+            left: 100%;
+            width: 0%;
+        }
+    }
+
+    @keyframes appear-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    #onemore {
+        top: 51%;
+        left: 58%;
+        position: fixed;
+        top: 225px;
+    }
+
+    #onemore span {
+        animation-delay: 2s;
+    }
+
+    #onemore.rev-block:after {
+        background: brown;
+        animation-delay: 1.4s;
+    }
+
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #show-all-notices {
+        margin-top: 50px;
+        margin-left: 45px;
+    }
+    #detailed-search {
+        margin-left: 50px;
+    }
+    #detayli-arama {
+        width: 200px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        margin-left: 10px;
+    }
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        padding-right: 20px;
+        text-align: 'justify';
+    }
+    .list-mobile-picture {
+        width: 100%;
+        height: 100%;
+        object-fit: 'contain';
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1601496362/pp_xronu3.jpg');
+    }
+    .cambazim-logo-309-48 {
+        width: 100%;
+        min-width: 20px;
+        text-align: center;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    img {
+        width: 100%;
+        min-width: 20px;
+        height: auto;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #list-mobile-ipad {
+        display: none;
+    }
+    /* İlanları Görüntülüyorsunuz */
+    #show-all-notices-text {
+        margin-left: -14px;
+    }
+    /* ...İlanlar... */
+    #filtered-results {
+        margin-left: 0px;
+        width: 250px;
+    }
+    /**Sosyal medya kanallarımza göz atın!**/
+    #gozat {
+        margin-left: 20px;
+        margin-right: auto;
+        width: 200px;
+    }
+    .social-container {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+    /***************************************/
+    #img-1680 {
+        display: none;
+    }
+    #img-360 img {
+        width: 85%;
+        min-width: 20px;
+        height: 120px;
+        margin-left: 15px;
+    }
+
+    #list-searched-results {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+
+    /* Cambazım Blog */
+    #blog-introduction {
+        margin-top: -10px;
+        margin-left: 10px;
+        font-size: 30px;
+        width: 360px;
+    }
+    /* Sektörden haberler ve en güncel bilgiler */
+    #blog-introduction-2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 15px;
+        font-size: 15px;
+        width: 300px;
+    }
+    /* Categories & Tags */
+    #categories-tags-list {
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    #blogs-list {
+        margin-left: -45px;
+    }
+
+    #blog-search-bar {
+        margin-left: 0px;
+        margin-right: 0px;
         width: 100%;
     }
-    100% {
-        left: 100%;
-        width: 0%;
+    #blog-search-bar-button {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    #blog-search-results {
+        margin-top: -100px;
+        margin-left: -500px;
     }
 }
 
-@keyframes appear-text {
-    0% {
-        opacity: 0;
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+    /*
+    NOTE:
+    This CSS file targets all the project.
+    */
+    #nprogress .bar {
+        height: 4px !important;
+        background-color: green !important;
+        color: green !important;
     }
-    100% {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /*
+    Place where the user publishes his detailed notice.
+    By setting the min-height, we can expand or minimize the area of the notice page.
+*/
+    .ql-editor {
+        min-height: 300px;
+    }
+
+    .featured-image {
+        /*width: 30%;*/
+        width: 50%;
+        height: 100%;
+
+        object-fit: cover;
+        /*margin-bottom: 20px;*/
+        margin-left: 135px;
+        border: 1px solid #8f918f;
+    }
+
+    .list-notices tr {
+        color: black;
+    }
+
+    .list-notices tr td {
+        padding-left: 10px;
+    }
+
+    #list-notices-image-id {
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    #list-notices-animal-type-id {
+        width: 200px;
+        padding-left: 0px;
+        padding-right: 300px;
+    }
+
+    /*
+    İlan başlığı
+*/
+    #list-notices-blog-title-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    /*
+    Kimden
+*/
+    #list-notices-whom-type-id {
+        width: 200px;
+        padding-right: 250px;
+        padding-left: 0px;
+    }
+
+    /*
+    İlan tarihi
+*/
+    #list-notices-notice-date-type-id {
+        width: 200px;
+        padding-right: 150px;
+        padding-left: 0px;
+    }
+
+    /*
+    Ülke
+*/
+    #list-notices-show-blog-categories-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    /*
+    Şehir
+*/
+    #list-notices-show-blog-tags-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    #header-animal-image-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-animal-type-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-notice-header-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    hr {
+        text-align: left;
+        background-color: green;
+        width: 0px;
+    }
+
+    /****BURSALOGO****************************************************************/
+    .bursalogo {
+        border-radius: 0px;
+        width: 370px;
+        height: 155px;
+        background-image: url('https://upload.wikimedia.org/wikipedia/tr/b/b1/Bursa_%C5%9Fehir_logosu.png');
+    }
+    /*******************************************************************************/
+
+    /****CAMBAZIM LOGO**************************************************************/
+    .cambazimlogo {
+        border-radius: 0px;
+        width: 700px;
+        height: 700px;
+        background-image: url('https://i.ibb.co/Z1pPXgj/pp.jpg');
+    }
+    /*******************************************************************************/
+
+    /****HEADER*********************************************************************/
+    .imagesThree {
+        border-radius: 0px;
+        width: 1120px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
         opacity: 1;
+        border-radius: 8px;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600125624/Screenshot_2_eovois.png');
     }
-}
+    /*******************************************************************************/
 
-#onemore {
-    top: 51%;
-    left: 58%;
-    position: fixed;
-    top: 225px;
-}
+    /****INITIAL PROFILE PICTURE****************************************************/
+    .initialProfilePicture {
+        border-radius: 0px;
+        width: 300px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600691160/initialProfilePicture.png');
+    }
+    /*******************************************************************************/
 
-#onemore span {
-    animation-delay: 2s;
-}
+    /*******************************************************************************/
 
-#onemore.rev-block:after {
-    background: brown;
-    animation-delay: 1.4s;
-}
+    /****DROPDOWNS******************************************************************/
+    .dropbtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    }
+    /*******************************************************************************/
 
-@media only screen and (max-width: 900px) {
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        margin-bottom: 5px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+        margin-bottom: 5px;
+    }
+
+    #pictureBlog {
+        border: 1px solid green;
+    }
+
+    #blogImageCenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        border-color: green;
+    }
+
+    /********************************CART BADGE***********************/
+    .cart-badge,
+    .cart-badge:hover {
+        border-radius: 50%;
+        padding: 2px;
+        font-size: 15px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: green;
+    }
+    /*****************************************************************/
+
+    #city_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #price_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #town_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #village_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #signinSignup {
+        color: grey;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #adminPanel {
+        cursor: pointer;
+        padding-left: 5px;
+    }
+
+    #appname:hover {
+        cursor: pointer;
+    }
+
+    #bakilacaklarlistem:hover {
+        cursor: pointer;
+    }
+
+    #forgotmypassword {
+        margin-left: 20px;
+    }
+
+    .social-container {
+        padding: 0px 0px;
+    }
+
+    a.social {
+        margin: 0 1rem;
+        transition: transform 250ms;
+        display: inline-block;
+    }
+
+    a.social:hover {
+        transform: translateY(-2px);
+    }
+
+    a.youtube {
+        color: white;
+    }
+    a.facebook {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.twitter {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.instagram {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+
     h1 {
-        font-size: 20px;
-        padding: 0.4em;
+        font-family: 'Noto Serif', serif;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0.4em 1em;
+        position: absolute;
+        top: 40%;
+        left: 46%;
+        transform: translate(-50%, -50%);
     }
-    #list-mobile {
-        display: none;
-    }
-    .list-mobile-picture {
-        display: none;
-    }
-    .cambazim-logo-309-48 {
-        display: none;
-    }
-    img {
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 1680px) {
-    #search-bar {
-        margin-left: 200px;
+    .rev-block {
+        position: fixed;
+        top: 175px;
     }
-    #list-mobile {
-        display: none;
-    }
-    .list-mobile-picture {
-        display: none;
-    }
-    .cambazim-logo-309-48 {
-        display: none;
-    }
-    img {
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 1200px) {
-    #search-bar {
-        margin-left: 200px;
+    .rev-block span {
+        opacity: 0;
+        animation: appear-text 0.0001s linear forwards;
+        animation-delay: 1.4s;
     }
-    #list-mobile {
-        display: none;
-    }
-    .list-mobile-picture {
-        display: none;
-    }
-    .cambazim-logo-309-48 {
-        display: none;
-    }
-    img {
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 1023px) {
-    #search-bar {
-        margin-left: 300px;
+    .rev-block::after {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: green;
+        animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: 1s;
     }
-    #list-mobile {
-        display: none;
-    }
-    .list-mobile-picture {
-        display: none;
-    }
-    .cambazim-logo-309-48 {
-        display: none;
-    }
-    img {
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 938px) {
-    #search-bar {
-        margin-left: 100px;
+    @keyframes rev-block {
+        0% {
+            left: 0;
+            width: 0%;
+        }
+        50% {
+            left: 0;
+            width: 100%;
+        }
+        100% {
+            left: 100%;
+            width: 0%;
+        }
     }
-    #list-mobile {
-        display: none;
-    }
-    .list-mobile-picture {
-        display: none;
-    }
-    .cambazim-logo-309-48 {
-        display: none;
-    }
-    img {
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 767px) {
-    #list-mobile {
-        display: none;
+    @keyframes appear-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-    .list-mobile-picture {
-        display: none;
-    }
-    .cambazim-logo-309-48 {
-        display: none;
-    }
-    img {
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 480px) {
+    #onemore {
+        top: 51%;
+        left: 58%;
+        position: fixed;
+        top: 225px;
+    }
+
+    #onemore span {
+        animation-delay: 2s;
+    }
+
+    #onemore.rev-block:after {
+        background: brown;
+        animation-delay: 1.4s;
+    }
+
     #iletisim-footer {
         display: block;
     }
@@ -578,60 +1059,2790 @@ h1 {
     #animalSub_id {
         width: 400px;
     }
-
     #signup-input {
         margin-left: 20px;
     }
-
     #sosyal-medya-kanallarimiz-text {
         width: 414px;
     }
-
     #list-mobile {
         font-family: 'Lato', sans-serif;
-        padding-right: 20px;
         text-align: 'justify';
+        margin-left: auto;
+        margin-right: auto;
     }
-
     .list-mobile-picture {
-        width: 100%;
+        width: 309px;
         height: 100%;
         object-fit: 'contain';
         background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1601496362/pp_xronu3.jpg');
     }
-
     .cambazim-logo-309-48 {
-        width: auto;
+        width: 309px;
         text-align: center;
-        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     img {
-        max-width: 100%;
+        min-width: 309px;
         height: auto;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #list-mobile-ipad {
+        display: none;
+    }
+    #gozat {
+        margin-left: 20px;
+        margin-right: auto;
+        width: 300px;
+    }
+    .social-container {
+        margin-left: -180px;
+        margin-right: auto;
+    }
+    #img-1680 {
+        display: none;
+    }
+    #img-360 img {
+        width: 60%;
+        min-width: 20px;
+        height: 110px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    /* İlanları Görüntülüyorsunuz */
+    #show-all-notices-text {
+        margin-left: 20px;
+    }
+    /* ...İlanlar... */
+    #filtered-results {
+        margin-left: 40px;
+        width: 250px;
+    }
+
+    #list-searched-results {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+
+    /* Cambazım Blog */
+    #blog-introduction {
+        margin-top: -10px;
+        margin-left: 10px;
+        font-size: 30px;
+        width: 360px;
+    }
+    /* Sektörden haberler ve en güncel bilgiler */
+    #blog-introduction-2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 15px;
+        font-size: 15px;
+        width: 300px;
+    }
+    /* Categories & Tags */
+    #categories-tags-list {
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    #blogs-list {
+        margin-left: -40px;
+    }
+
+    #blog-search-bar {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    #blog-search-bar-button {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    #blog-search-results {
+        margin-top: -100px;
+        margin-left: -500px;
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 480px) and (max-width: 539px) {
+    /*
+    NOTE:
+    This CSS file targets all the project.
+    */
+    #nprogress .bar {
+        height: 4px !important;
+        background-color: green !important;
+        color: green !important;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /*
+    Place where the user publishes his detailed notice.
+    By setting the min-height, we can expand or minimize the area of the notice page.
+*/
+    .ql-editor {
+        min-height: 300px;
+    }
+
+    .featured-image {
+        /*width: 30%;*/
+        width: 50%;
+        height: 100%;
+
+        object-fit: cover;
+        /*margin-bottom: 20px;*/
+        margin-left: 135px;
+        border: 1px solid #8f918f;
+    }
+
+    .list-notices tr {
+        color: black;
+    }
+
+    .list-notices tr td {
+        padding-left: 10px;
+    }
+
+    #list-notices-image-id {
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    #list-notices-animal-type-id {
+        width: 200px;
+        padding-left: 0px;
+        padding-right: 300px;
+    }
+
+    /*
+    İlan başlığı
+*/
+    #list-notices-blog-title-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    /*
+    Kimden
+*/
+    #list-notices-whom-type-id {
+        width: 200px;
+        padding-right: 250px;
+        padding-left: 0px;
+    }
+
+    /*
+    İlan tarihi
+*/
+    #list-notices-notice-date-type-id {
+        width: 200px;
+        padding-right: 150px;
+        padding-left: 0px;
+    }
+
+    /*
+    Ülke
+*/
+    #list-notices-show-blog-categories-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    /*
+    Şehir
+*/
+    #list-notices-show-blog-tags-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    #header-animal-image-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-animal-type-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-notice-header-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    hr {
+        text-align: left;
+        background-color: green;
+        width: 0px;
+    }
+
+    /****BURSALOGO****************************************************************/
+    .bursalogo {
+        border-radius: 0px;
+        width: 370px;
+        height: 155px;
+        background-image: url('https://upload.wikimedia.org/wikipedia/tr/b/b1/Bursa_%C5%9Fehir_logosu.png');
+    }
+    /*******************************************************************************/
+
+    /****CAMBAZIM LOGO**************************************************************/
+    .cambazimlogo {
+        border-radius: 0px;
+        width: 700px;
+        height: 700px;
+        background-image: url('https://i.ibb.co/Z1pPXgj/pp.jpg');
+    }
+    /*******************************************************************************/
+
+    /****HEADER*********************************************************************/
+    .imagesThree {
+        border-radius: 0px;
+        width: 1120px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        opacity: 1;
+        border-radius: 8px;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600125624/Screenshot_2_eovois.png');
+    }
+    /*******************************************************************************/
+
+    /****INITIAL PROFILE PICTURE****************************************************/
+    .initialProfilePicture {
+        border-radius: 0px;
+        width: 300px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600691160/initialProfilePicture.png');
+    }
+    /*******************************************************************************/
+
+    /*******************************************************************************/
+
+    /****DROPDOWNS******************************************************************/
+    .dropbtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    }
+    /*******************************************************************************/
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        margin-bottom: 5px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+        margin-bottom: 5px;
+    }
+
+    #pictureBlog {
+        border: 1px solid green;
+    }
+
+    #blogImageCenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        border-color: green;
+    }
+
+    /********************************CART BADGE***********************/
+    .cart-badge,
+    .cart-badge:hover {
+        border-radius: 50%;
+        padding: 2px;
+        font-size: 15px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: green;
+    }
+    /*****************************************************************/
+
+    #city_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #price_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #town_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #village_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #signinSignup {
+        color: grey;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #adminPanel {
+        cursor: pointer;
+        padding-left: 5px;
+    }
+
+    #appname:hover {
+        cursor: pointer;
+    }
+
+    #bakilacaklarlistem:hover {
+        cursor: pointer;
+    }
+
+    #forgotmypassword {
+        margin-left: 20px;
+    }
+
+    .social-container {
+        padding: 0px 0px;
+    }
+
+    a.social {
+        margin: 0 1rem;
+        transition: transform 250ms;
+        display: inline-block;
+    }
+
+    a.social:hover {
+        transform: translateY(-2px);
+    }
+
+    a.youtube {
+        color: white;
+    }
+    a.facebook {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.twitter {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.instagram {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+
+    h1 {
+        font-family: 'Noto Serif', serif;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0.4em 1em;
+        position: absolute;
+        top: 40%;
+        left: 46%;
+        transform: translate(-50%, -50%);
+    }
+
+    .rev-block {
+        position: fixed;
+        top: 175px;
+    }
+
+    .rev-block span {
+        opacity: 0;
+        animation: appear-text 0.0001s linear forwards;
+        animation-delay: 1.4s;
+    }
+
+    .rev-block::after {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: green;
+        animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes rev-block {
+        0% {
+            left: 0;
+            width: 0%;
+        }
+        50% {
+            left: 0;
+            width: 100%;
+        }
+        100% {
+            left: 100%;
+            width: 0%;
+        }
+    }
+
+    @keyframes appear-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    #onemore {
+        top: 51%;
+        left: 58%;
+        position: fixed;
+        top: 225px;
+    }
+
+    #onemore span {
+        animation-delay: 2s;
+    }
+
+    #onemore.rev-block:after {
+        background: brown;
+        animation-delay: 1.4s;
+    }
+
+    #list-mobile-ipad {
+        display: none;
+    }
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #show-all-notices {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detailed-search {
+        margin-left: 130px;
+    }
+    #detayli-arama {
+        width: 200px;
+    }
+    #show-all-notices-text {
+        margin-left: -15px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        width: 414px;
+    }
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        text-align: 'justify';
+        margin-left: auto;
+        margin-right: 40px;
+    }
+    .cambazim-logo-309-48 {
+        width: 309px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        min-width: 100%;
+        height: auto;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #img-1680 {
+        display: none;
+    }
+    #img-360 img {
+        width: 60%;
+        min-width: 20px;
+        height: 160px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+    /*
+    NOTE:
+    This CSS file targets all the project.
+    */
+    #nprogress .bar {
+        height: 4px !important;
+        background-color: green !important;
+        color: green !important;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /*
+    Place where the user publishes his detailed notice.
+    By setting the min-height, we can expand or minimize the area of the notice page.
+    */
+    .ql-editor {
+        min-height: 300px;
+    }
+
+    .featured-image {
+        /*width: 30%;*/
+        width: 50%;
+        height: 100%;
+
+        object-fit: cover;
+        /*margin-bottom: 20px;*/
+        margin-left: 135px;
+        border: 1px solid #8f918f;
+    }
+
+    .list-notices tr {
+        color: black;
+    }
+
+    .list-notices tr td {
+        padding-left: 10px;
+    }
+
+    #list-notices-image-id {
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    #list-notices-animal-type-id {
+        width: 200px;
+        padding-left: 0px;
+        padding-right: 300px;
+    }
+
+    /*
+İlan başlığı
+*/
+    #list-notices-blog-title-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    /*
+Kimden
+*/
+    #list-notices-whom-type-id {
+        width: 200px;
+        padding-right: 250px;
+        padding-left: 0px;
+    }
+
+    /*
+İlan tarihi
+*/
+    #list-notices-notice-date-type-id {
+        width: 200px;
+        padding-right: 150px;
+        padding-left: 0px;
+    }
+
+    /*
+Ülke
+*/
+    #list-notices-show-blog-categories-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    /*
+Şehir
+*/
+    #list-notices-show-blog-tags-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    #header-animal-image-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-animal-type-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-notice-header-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    hr {
+        text-align: left;
+        background-color: green;
+        width: 0px;
+    }
+
+    /****BURSALOGO****************************************************************/
+    .bursalogo {
+        border-radius: 0px;
+        width: 370px;
+        height: 155px;
+        background-image: url('https://upload.wikimedia.org/wikipedia/tr/b/b1/Bursa_%C5%9Fehir_logosu.png');
+    }
+    /*******************************************************************************/
+
+    /****CAMBAZIM LOGO**************************************************************/
+    .cambazimlogo {
+        border-radius: 0px;
+        width: 700px;
+        height: 700px;
+        background-image: url('https://i.ibb.co/Z1pPXgj/pp.jpg');
+    }
+    /*******************************************************************************/
+
+    /****HEADER*********************************************************************/
+    .imagesThree {
+        border-radius: 0px;
+        width: 1120px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        opacity: 1;
+        border-radius: 8px;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600125624/Screenshot_2_eovois.png');
+    }
+    /*******************************************************************************/
+
+    /****INITIAL PROFILE PICTURE****************************************************/
+    .initialProfilePicture {
+        border-radius: 0px;
+        width: 300px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600691160/initialProfilePicture.png');
+    }
+    /*******************************************************************************/
+
+    /*******************************************************************************/
+
+    /****DROPDOWNS******************************************************************/
+    .dropbtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    }
+    /*******************************************************************************/
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        margin-bottom: 5px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+        margin-bottom: 5px;
+    }
+
+    #pictureBlog {
+        border: 1px solid green;
+    }
+
+    #blogImageCenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        border-color: green;
+    }
+
+    /********************************CART BADGE***********************/
+    .cart-badge,
+    .cart-badge:hover {
+        border-radius: 50%;
+        padding: 2px;
+        font-size: 15px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: green;
+    }
+    /*****************************************************************/
+
+    #city_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #price_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #town_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #village_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #signinSignup {
+        color: grey;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #adminPanel {
+        cursor: pointer;
+        padding-left: 5px;
+    }
+
+    #appname:hover {
+        cursor: pointer;
+    }
+
+    #bakilacaklarlistem:hover {
+        cursor: pointer;
+    }
+
+    #forgotmypassword {
+        margin-left: 20px;
+    }
+
+    .social-container {
+        padding: 0px 0px;
+    }
+
+    a.social {
+        margin: 0 1rem;
+        transition: transform 250ms;
+        display: inline-block;
+    }
+
+    a.social:hover {
+        transform: translateY(-2px);
+    }
+
+    a.youtube {
+        color: white;
+    }
+    a.facebook {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.twitter {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.instagram {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+
+    h1 {
+        font-family: 'Noto Serif', serif;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0.4em 1em;
+        position: absolute;
+        top: 40%;
+        left: 46%;
+        transform: translate(-50%, -50%);
+    }
+
+    .rev-block {
+        position: fixed;
+        top: 175px;
+    }
+
+    .rev-block span {
+        opacity: 0;
+        animation: appear-text 0.0001s linear forwards;
+        animation-delay: 1.4s;
+    }
+
+    .rev-block::after {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: green;
+        animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes rev-block {
+        0% {
+            left: 0;
+            width: 0%;
+        }
+        50% {
+            left: 0;
+            width: 100%;
+        }
+        100% {
+            left: 100%;
+            width: 0%;
+        }
+    }
+
+    @keyframes appear-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    #onemore {
+        top: 51%;
+        left: 58%;
+        position: fixed;
+        top: 225px;
+    }
+
+    #onemore span {
+        animation-delay: 2s;
+    }
+
+    #onemore.rev-block:after {
+        background: brown;
+        animation-delay: 1.4s;
+    }
+
+    #list-mobile-ipad {
+        display: none;
+    }
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #show-all-notices {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detailed-search {
+        margin-left: 150px;
+    }
+    #detayli-arama {
+        width: 200px;
+    }
+    #show-all-notices-text {
+        margin-left: -15px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        width: 414px;
+    }
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        text-align: 'justify';
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cambazim-logo-309-48 img {
+        min-width: 60%;
+        height: auto;
+        margin-left: 100px;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        display: none;
+    }
+    #img-1680 {
+        display: none;
+    }
+    #img-360 img {
+        display: none;
+    }
+
+    #list-searched-results {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+
+    /* Cambazım Blog */
+    #blog-introduction {
+        margin-top: -10px;
+        margin-left: 15px;
+        font-size: 30px;
+        width: 360px;
+    }
+    /* Sektörden haberler ve en güncel bilgiler */
+    #blog-introduction-2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        font-size: 15px;
+        width: 300px;
+    }
+    /* Categories & Tags */
+    #categories-tags-list {
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    #blogs-list {
+        margin-left: -40px;
+    }
+
+    /* Bloglarda Ara */
+    #blog-search-bar {
+        margin-left: 70px;
+        margin-right: 0px;
+        width: 300px;
+    }
+    /* Ara button */
+    #blog-search-bar-button {
+        margin-left: 10px;
+        margin-right: 0px;
+        width: 100px;
+    }
+    #blog-search-results {
+        margin-left: -450px;
+        margin-top: -100px;
+    }
+
+    #blogs-list-excerpt {
+        margin-left: 8px;
+    }
+
+    #blogs-list-button {
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /*
+    NOTE:
+    This CSS file targets all the project.
+    */
+    #nprogress .bar {
+        height: 4px !important;
+        background-color: green !important;
+        color: green !important;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /*
+    Place where the user publishes his detailed notice.
+    By setting the min-height, we can expand or minimize the area of the notice page.
+    */
+    .ql-editor {
+        min-height: 300px;
+    }
+
+    .featured-image {
+        /*width: 30%;*/
+        width: 50%;
+        height: 100%;
+
+        object-fit: cover;
+        /*margin-bottom: 20px;*/
+        margin-left: 135px;
+        border: 1px solid #8f918f;
+    }
+
+    .list-notices tr {
+        color: black;
+    }
+
+    .list-notices tr td {
+        padding-left: 10px;
+    }
+
+    #list-notices-image-id {
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    #list-notices-animal-type-id {
+        width: 200px;
+        padding-left: 0px;
+        padding-right: 300px;
+    }
+
+    /*
+İlan başlığı
+*/
+    #list-notices-blog-title-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    /*
+Kimden
+*/
+    #list-notices-whom-type-id {
+        width: 200px;
+        padding-right: 250px;
+        padding-left: 0px;
+    }
+
+    /*
+İlan tarihi
+*/
+    #list-notices-notice-date-type-id {
+        width: 200px;
+        padding-right: 150px;
+        padding-left: 0px;
+    }
+
+    /*
+Ülke
+*/
+    #list-notices-show-blog-categories-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    /*
+Şehir
+*/
+    #list-notices-show-blog-tags-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    #header-animal-image-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-animal-type-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-notice-header-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    hr {
+        text-align: left;
+        background-color: green;
+        width: 0px;
+    }
+
+    /****BURSALOGO****************************************************************/
+    .bursalogo {
+        border-radius: 0px;
+        width: 370px;
+        height: 155px;
+        background-image: url('https://upload.wikimedia.org/wikipedia/tr/b/b1/Bursa_%C5%9Fehir_logosu.png');
+    }
+    /*******************************************************************************/
+
+    /****CAMBAZIM LOGO**************************************************************/
+    .cambazimlogo {
+        border-radius: 0px;
+        width: 700px;
+        height: 700px;
+        background-image: url('https://i.ibb.co/Z1pPXgj/pp.jpg');
+    }
+    /*******************************************************************************/
+
+    /****HEADER*********************************************************************/
+    .imagesThree {
+        border-radius: 0px;
+        width: 1120px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        opacity: 1;
+        border-radius: 8px;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600125624/Screenshot_2_eovois.png');
+    }
+    /*******************************************************************************/
+
+    /****INITIAL PROFILE PICTURE****************************************************/
+    .initialProfilePicture {
+        border-radius: 0px;
+        width: 300px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600691160/initialProfilePicture.png');
+    }
+    /*******************************************************************************/
+
+    /*******************************************************************************/
+
+    /****DROPDOWNS******************************************************************/
+    .dropbtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    }
+    /*******************************************************************************/
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        margin-bottom: 5px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+        margin-bottom: 5px;
+    }
+
+    #pictureBlog {
+        border: 1px solid green;
+    }
+
+    #blogImageCenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        border-color: green;
+    }
+
+    /********************************CART BADGE***********************/
+    .cart-badge,
+    .cart-badge:hover {
+        border-radius: 50%;
+        padding: 2px;
+        font-size: 15px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: green;
+    }
+    /*****************************************************************/
+
+    #city_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #price_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #town_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #village_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #signinSignup {
+        color: grey;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #adminPanel {
+        cursor: pointer;
+        padding-left: 5px;
+    }
+
+    #appname:hover {
+        cursor: pointer;
+    }
+
+    #bakilacaklarlistem:hover {
+        cursor: pointer;
+    }
+
+    #forgotmypassword {
+        margin-left: 20px;
+    }
+
+    .social-container {
+        padding: 0px 0px;
+    }
+
+    a.social {
+        margin: 0 1rem;
+        transition: transform 250ms;
+        display: inline-block;
+    }
+
+    a.social:hover {
+        transform: translateY(-2px);
+    }
+
+    a.youtube {
+        color: white;
+    }
+    a.facebook {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.twitter {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.instagram {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+
+    h1 {
+        font-family: 'Noto Serif', serif;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0.4em 1em;
+        position: absolute;
+        top: 40%;
+        left: 46%;
+        transform: translate(-50%, -50%);
+    }
+
+    .rev-block {
+        position: fixed;
+        top: 175px;
+    }
+
+    .rev-block span {
+        opacity: 0;
+        animation: appear-text 0.0001s linear forwards;
+        animation-delay: 1.4s;
+    }
+
+    .rev-block::after {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: green;
+        animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes rev-block {
+        0% {
+            left: 0;
+            width: 0%;
+        }
+        50% {
+            left: 0;
+            width: 100%;
+        }
+        100% {
+            left: 100%;
+            width: 0%;
+        }
+    }
+
+    @keyframes appear-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    #onemore {
+        top: 51%;
+        left: 58%;
+        position: fixed;
+        top: 225px;
+    }
+
+    #onemore span {
+        animation-delay: 2s;
+    }
+
+    #onemore.rev-block:after {
+        background: brown;
+        animation-delay: 1.4s;
+    }
+
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 120px;
+        margin-right: auto;
+    }
+    #show-all-notices {
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detailed-search {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detayli-arama {
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #show-all-notices-text {
+        margin-left: -15px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
     #list-mobile {
         font-family: 'Lato', sans-serif;
         padding-right: 20px;
+        padding-left: 30px;
         text-align: 'justify';
     }
 
-    .list-mobile-picture {
-        width: 100%;
-        height: 100%;
-        object-fit: 'contain';
-        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1601496362/pp_xronu3.jpg');
-    }
+    /*#list-mobile-ipad {
+        font-family: 'Lato', sans-serif;
+        padding-right: 20px;
+        padding-left: 30px;
+        text-align: 'justify';
+    }*/
 
     .cambazim-logo-309-48 {
-        width: auto;
+        width: 309px;
         text-align: center;
-        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     img {
-        max-width: 100%;
+        min-width: 100%;
         height: auto;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        display: none;
+    }
+    #bizden-footer {
+        margin-left: 100px;
+    }
+    #img-1680 {
+        display: none;
+    }
+    #img-360 img {
+        width: 90%;
+        min-width: 20px;
+        height: 160px;
+        margin-right: 10px;
+    }
+    #list-searched-results {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 100px;
+    }
+
+    /* Cambazım Blog */
+    #blog-introduction {
+        margin-top: -10px;
+        margin-left: 15px;
+        font-size: 30px;
+        width: 360px;
+    }
+    /* Sektörden haberler ve en güncel bilgiler */
+    #blog-introduction-2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        font-size: 15px;
+        width: 300px;
+    }
+    /* Categories & Tags */
+    #categories-tags-list {
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    #blogs-list {
+        margin-left: -40px;
+    }
+
+    /* Bloglarda Ara */
+    #blog-search-bar {
+        margin-left: 70px;
+        margin-right: 0px;
+        width: 500px;
+    }
+    /* Ara button */
+    #blog-search-bar-button {
+        margin-left: 10px;
+        margin-right: 0px;
+        width: 100px;
+    }
+    #blog-search-results {
+        margin-left: -450px;
+        margin-top: -100px;
+    }
+
+    #blogs-list-excerpt {
+        margin-left: 40px;
+    }
+
+    #blogs-list-button {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1679px) {
+    /*
+    NOTE:
+    This CSS file targets all the project.
+    */
+    #nprogress .bar {
+        height: 4px !important;
+        background-color: green !important;
+        color: green !important;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /*
+Place where the user publishes his detailed notice.
+By setting the min-height, we can expand or minimize the area of the notice page.
+*/
+    .ql-editor {
+        min-height: 300px;
+    }
+
+    .featured-image {
+        /*width: 30%;*/
+        width: 50%;
+        height: 100%;
+
+        object-fit: cover;
+        /*margin-bottom: 20px;*/
+        margin-left: 135px;
+        border: 1px solid #8f918f;
+    }
+
+    .list-notices tr {
+        color: black;
+    }
+
+    .list-notices tr td {
+        padding-left: 10px;
+    }
+
+    #list-notices-image-id {
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    #list-notices-animal-type-id {
+        width: 200px;
+        padding-left: 0px;
+        padding-right: 300px;
+    }
+
+    /*
+İlan başlığı
+*/
+    #list-notices-blog-title-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    /*
+Kimden
+*/
+    #list-notices-whom-type-id {
+        width: 200px;
+        padding-right: 250px;
+        padding-left: 0px;
+    }
+
+    /*
+İlan tarihi
+*/
+    #list-notices-notice-date-type-id {
+        width: 200px;
+        padding-right: 150px;
+        padding-left: 0px;
+    }
+
+    /*
+Ülke
+*/
+    #list-notices-show-blog-categories-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    /*
+Şehir
+*/
+    #list-notices-show-blog-tags-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    #header-animal-image-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-animal-type-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-notice-header-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    hr {
+        text-align: left;
+        background-color: green;
+        width: 0px;
+    }
+
+    /****BURSALOGO****************************************************************/
+    .bursalogo {
+        border-radius: 0px;
+        width: 370px;
+        height: 155px;
+        background-image: url('https://upload.wikimedia.org/wikipedia/tr/b/b1/Bursa_%C5%9Fehir_logosu.png');
+    }
+    /*******************************************************************************/
+
+    /****CAMBAZIM LOGO**************************************************************/
+    .cambazimlogo {
+        border-radius: 0px;
+        width: 700px;
+        height: 700px;
+        background-image: url('https://i.ibb.co/Z1pPXgj/pp.jpg');
+    }
+    /*******************************************************************************/
+
+    /****HEADER*********************************************************************/
+    .imagesThree {
+        border-radius: 0px;
+        width: 1120px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        opacity: 1;
+        border-radius: 8px;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600125624/Screenshot_2_eovois.png');
+    }
+    /*******************************************************************************/
+
+    /****INITIAL PROFILE PICTURE****************************************************/
+    .initialProfilePicture {
+        border-radius: 0px;
+        width: 300px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600691160/initialProfilePicture.png');
+    }
+    /*******************************************************************************/
+
+    /*******************************************************************************/
+
+    /****DROPDOWNS******************************************************************/
+    .dropbtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    }
+    /*******************************************************************************/
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        margin-bottom: 5px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+        margin-bottom: 5px;
+    }
+
+    #pictureBlog {
+        border: 1px solid green;
+    }
+
+    #blogImageCenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        border-color: green;
+    }
+
+    /********************************CART BADGE***********************/
+    .cart-badge,
+    .cart-badge:hover {
+        border-radius: 50%;
+        padding: 2px;
+        font-size: 15px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: green;
+    }
+    /*****************************************************************/
+
+    #city_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #price_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #town_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #village_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #signinSignup {
+        color: grey;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #adminPanel {
+        cursor: pointer;
+        padding-left: 5px;
+    }
+
+    #appname:hover {
+        cursor: pointer;
+    }
+
+    #bakilacaklarlistem:hover {
+        cursor: pointer;
+    }
+
+    #forgotmypassword {
+        margin-left: 20px;
+    }
+
+    .social-container {
+        padding: 0px 0px;
+    }
+
+    a.social {
+        margin: 0 1rem;
+        transition: transform 250ms;
+        display: inline-block;
+    }
+
+    a.social:hover {
+        transform: translateY(-2px);
+    }
+
+    a.youtube {
+        color: white;
+    }
+    a.facebook {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.twitter {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.instagram {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+
+    h1 {
+        font-family: 'Noto Serif', serif;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0.4em 1em;
+        position: absolute;
+        top: 40%;
+        left: 46%;
+        transform: translate(-50%, -50%);
+    }
+
+    .rev-block {
+        position: fixed;
+        top: 175px;
+    }
+
+    .rev-block span {
+        opacity: 0;
+        animation: appear-text 0.0001s linear forwards;
+        animation-delay: 1.4s;
+    }
+
+    .rev-block::after {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: green;
+        animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes rev-block {
+        0% {
+            left: 0;
+            width: 0%;
+        }
+        50% {
+            left: 0;
+            width: 100%;
+        }
+        100% {
+            left: 100%;
+            width: 0%;
+        }
+    }
+
+    @keyframes appear-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    #onemore {
+        top: 51%;
+        left: 58%;
+        position: fixed;
+        top: 225px;
+    }
+
+    #onemore span {
+        animation-delay: 2s;
+    }
+
+    #onemore.rev-block:after {
+        background: brown;
+        animation-delay: 1.4s;
+    }
+
+    /**/
+
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 170px;
+        margin-right: auto;
+    }
+    #show-all-notices {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detailed-search {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detayli-arama {
+        width: 250px;
+    }
+    #show-all-notices-text {
+        margin-left: -15px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        display: none;
+    }
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        padding-right: 50px;
+        padding-left: 125px;
+        text-align: 'center';
+    }
+    /*#list-mobile-ipad {
+        font-family: 'Lato', sans-serif;
+        padding-right: 20px;
+        padding-left: 30px;
+        text-align: 'justify';
+    }*/
+
+    .cambazim-logo-309-48 {
+        width: 309px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        min-width: 100%;
+        height: auto;
+    }
+    #img-360 img {
+        display: none;
+    }
+    .imagesThree {
+        display: none !important;
+    }
+    #bizden-footer {
+        margin-left: 300px;
+    }
+    #copyright {
+        margin-left: 200px;
+    }
+
+    #list-searched-results {
+        margin-left: 160px;
+    }
+
+    /* Cambazım Blog */
+    #blog-introduction {
+        margin-top: -10px;
+        margin-left: 30px;
+        font-size: 30px;
+        width: 360px;
+    }
+    /* Sektörden haberler ve en güncel bilgiler */
+    #blog-introduction-2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 35px;
+        font-size: 15px;
+        width: 300px;
+    }
+    /* Categories & Tags */
+    #categories-tags-list {
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    #blogs-list {
+        margin-left: -45px;
+    }
+
+    #blog-search-bar {
+        margin-left: 150px;
+        margin-right: 0px;
+        width: 600px;
+    }
+    #blog-search-bar-button {
+        margin-left: 10px;
+        margin-right: 0px;
+        width: 100px;
+    }
+    #blog-search-results {
+        margin-top: -100px;
+        margin-left: -380px;
+    }
+
+    #blogs-list-excerpt {
+        margin-left: 30px;
+    }
+
+    #blogs-list-button {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    /*
+    NOTE:
+    This CSS file targets all the project.
+    */
+    #nprogress .bar {
+        height: 4px !important;
+        background-color: green !important;
+        color: green !important;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /*
+    Place where the user publishes his detailed notice.
+    By setting the min-height, we can expand or minimize the area of the notice page.
+*/
+    .ql-editor {
+        min-height: 300px;
+    }
+
+    .featured-image {
+        /*width: 30%;*/
+        width: 50%;
+        height: 100%;
+
+        object-fit: cover;
+        /*margin-bottom: 20px;*/
+        margin-left: 135px;
+        border: 1px solid #8f918f;
+    }
+
+    .list-notices tr {
+        color: black;
+    }
+
+    .list-notices tr td {
+        padding-left: 10px;
+    }
+
+    #list-notices-image-id {
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    #list-notices-animal-type-id {
+        width: 200px;
+        padding-left: 0px;
+        padding-right: 300px;
+    }
+
+    /*
+    İlan başlığı
+*/
+    #list-notices-blog-title-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    /*
+    Kimden
+*/
+    #list-notices-whom-type-id {
+        width: 200px;
+        padding-right: 250px;
+        padding-left: 0px;
+    }
+
+    /*
+    İlan tarihi
+*/
+    #list-notices-notice-date-type-id {
+        width: 200px;
+        padding-right: 150px;
+        padding-left: 0px;
+    }
+
+    /*
+    Ülke
+*/
+    #list-notices-show-blog-categories-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    /*
+    Şehir
+*/
+    #list-notices-show-blog-tags-type-id {
+        width: 200px;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+
+    #header-animal-image-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-animal-type-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    #header-notice-header-id {
+        width: 200px;
+        padding-left: 30px;
+    }
+
+    hr {
+        text-align: left;
+        background-color: green;
+        width: 0px;
+    }
+
+    /****BURSALOGO****************************************************************/
+    .bursalogo {
+        border-radius: 0px;
+        width: 370px;
+        height: 155px;
+        background-image: url('https://upload.wikimedia.org/wikipedia/tr/b/b1/Bursa_%C5%9Fehir_logosu.png');
+    }
+    /*******************************************************************************/
+
+    /****CAMBAZIM LOGO**************************************************************/
+    .cambazimlogo {
+        border-radius: 0px;
+        width: 700px;
+        height: 700px;
+        background-image: url('https://i.ibb.co/Z1pPXgj/pp.jpg');
+    }
+    /*******************************************************************************/
+
+    /****HEADER*********************************************************************/
+    .imagesThree {
+        border-radius: 0px;
+        width: 1120px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        opacity: 1;
+        border-radius: 8px;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600125624/Screenshot_2_eovois.png');
+    }
+    /*******************************************************************************/
+
+    /****INITIAL PROFILE PICTURE****************************************************/
+    .initialProfilePicture {
+        border-radius: 0px;
+        width: 300px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1600691160/initialProfilePicture.png');
+    }
+    /*******************************************************************************/
+
+    /*******************************************************************************/
+
+    /****DROPDOWNS******************************************************************/
+    .dropbtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 5px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    }
+    /*******************************************************************************/
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        margin-bottom: 5px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+        margin-bottom: 5px;
+    }
+
+    #pictureBlog {
+        border: 1px solid green;
+    }
+
+    #blogImageCenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        border-color: green;
+    }
+
+    /********************************CART BADGE***********************/
+    .cart-badge,
+    .cart-badge:hover {
+        border-radius: 50%;
+        padding: 2px;
+        font-size: 15px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: green;
+    }
+    /*****************************************************************/
+
+    #city_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #price_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #town_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #village_id {
+        height: 200px;
+        width: 250px;
+        overflow-y: scroll;
+    }
+
+    #signinSignup {
+        color: grey;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #adminPanel {
+        cursor: pointer;
+        padding-left: 5px;
+    }
+
+    #appname:hover {
+        cursor: pointer;
+    }
+
+    #bakilacaklarlistem:hover {
+        cursor: pointer;
+    }
+
+    #forgotmypassword {
+        margin-left: 20px;
+    }
+
+    .social-container {
+        padding: 0px 0px;
+    }
+
+    a.social {
+        margin: 0 1rem;
+        transition: transform 250ms;
+        display: inline-block;
+    }
+
+    a.social:hover {
+        transform: translateY(-2px);
+    }
+
+    a.youtube {
+        color: white;
+    }
+    a.facebook {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.twitter {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+    a.instagram {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
+
+    h1 {
+        font-family: 'Noto Serif', serif;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0.4em 1em;
+        position: absolute;
+        top: 40%;
+        left: 46%;
+        transform: translate(-50%, -50%);
+    }
+
+    .rev-block {
+        position: fixed;
+        top: 175px;
+    }
+
+    .rev-block span {
+        opacity: 0;
+        animation: appear-text 0.0001s linear forwards;
+        animation-delay: 1.4s;
+    }
+
+    .rev-block::after {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background: green;
+        animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes rev-block {
+        0% {
+            left: 0;
+            width: 0%;
+        }
+        50% {
+            left: 0;
+            width: 100%;
+        }
+        100% {
+            left: 100%;
+            width: 0%;
+        }
+    }
+
+    @keyframes appear-text {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    #onemore {
+        top: 51%;
+        left: 58%;
+        position: fixed;
+        top: 225px;
+    }
+
+    #onemore span {
+        animation-delay: 2s;
+    }
+
+    #onemore.rev-block:after {
+        background: brown;
+        animation-delay: 1.4s;
+    }
+    /* 1.10.2020 Responsive images */
+    #img-1680 img {
+        margin-left: 5px;
+    }
+    #img-360 img {
+        display: none;
+    }
+    .cambazim-logo-309-48 {
+        display: none;
+    }
+    .cambazim-logo-309-48 img {
+        display: none;
+    }
+    #list-mobile {
+        display: none;
+    }
+
+    #search-bar {
+        margin-left: 200px;
+    }
+
+    #list-searched-results {
+        margin-left: 200px;
+    }
+
+    /* Cambazım Blog */
+    #blog-introduction {
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+    /* Sektörden haberler ve en güncel bilgiler */
+    #blog-introduction-2 {
+        margin-top: 100px;
+        margin-left: 70px;
+    }
+    /* Categories & Tags */
+    #categories-tags-list {
+        margin-top: 150px;
+    }
+    /* Blog search text field and search bar */
+    #blog-search-bar {
+        margin-left: 500px;
+        margin-right: 0px;
+        width: 500px;
+    }
+    #blog-search-bar-button {
+        margin-left: 20px;
+        margin-right: 0px;
+        width: 100px;
+    }
+    #blog-search-results {
+        margin-left: -20px;
+        margin-top: -120px;
+        margin-bottom: 0px;
     }
 }

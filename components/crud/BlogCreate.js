@@ -1,27 +1,27 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import {withRouter} from 'next/router';
-import {getCookie, isAuth} from '../../actions/auth';
-import {getCategories, create} from '../../actions/category';
-import {getTags} from '../../actions/tag';
-import {createBlog} from '../../actions/blog';
-const ReactQuill = dynamic(() => import('react-quill'), {ssr: false});
+import { withRouter } from 'next/router';
+import { getCookie, isAuth } from '../../actions/auth';
+import { getCategories, create } from '../../actions/category';
+import { getTags } from '../../actions/tag';
+import { createBlog } from '../../actions/blog';
+const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 import '../../node_modules/react-quill/dist/quill.snow.css';
-import {QuillModules, QuillFormats} from '../../helpers/quill';
+import { QuillModules, QuillFormats } from '../../helpers/quill';
 
-const CreateBlog = ({router}) => {
+const CreateBlog = ({ router }) => {
     //Blog form local storage.
     const blogFormLS = () => {
         if (typeof window === 'undefined') {
             return false;
         }
-        
+
         if (localStorage.getItem('blog')) {
             return JSON.parse(localStorage.getItem('blog'));
         } else {
             return false;
         }
-    }
+    };
 
     const [categories, setCategories] = useState([]); //
     const [tags, setTags] = useState([]); //
@@ -42,11 +42,11 @@ const CreateBlog = ({router}) => {
         hidePublishButton: false
     });
 
-    const {error, sizeError, success, formData, title, hidePublishButton} = values;
+    const { error, sizeError, success, formData, title, hidePublishButton } = values;
     const token = getCookie('token');
 
-    useEffect(()=>{
-        setValues({...values, formData: new FormData()});
+    useEffect(() => {
+        setValues({ ...values, formData: new FormData() });
         initCategories();
         initTags();
     }, [router]);
@@ -55,34 +55,39 @@ const CreateBlog = ({router}) => {
         With this way we can see our categories and tags are in the state.
     */
     const initCategories = () => {
-        getCategories().then(data => {
-            if(data.error) {
-                setValues({...values, error: data.error});
+        getCategories().then((data) => {
+            if (data.error) {
+                setValues({ ...values, error: data.error });
             } else {
                 setCategories(data);
             }
-        })
+        });
     };
 
     const initTags = () => {
-        getTags().then(data => {
+        getTags().then((data) => {
             if (data.error) {
-                setValues({...values, error: data.error});
+                setValues({ ...values, error: data.error });
             } else {
                 setTags(data);
             }
-        })
+        });
     };
 
     const publishBlog = (e) => {
         e.preventDefault();
         //console.log('ready to publishBlog');
-        createBlog(formData, token).then(data => {
+        createBlog(formData, token).then((data) => {
             if (data.error) {
-                setValues({...values, error: data.error});
+                setValues({ ...values, error: data.error });
             } else {
                 //If response was successful, we need to clear the fields.
-                setValues({...values, title: '', error: '', success: `"${data.title}" başlıklı yeni ilanınız yayımlandı.`});
+                setValues({
+                    ...values,
+                    title: '',
+                    error: '',
+                    success: `"${data.title}" başlıklı yeni ilanınız yayımlandı.`
+                });
                 setBody('');
                 setCategories([]);
                 setTags([]);
@@ -90,8 +95,8 @@ const CreateBlog = ({router}) => {
         });
     };
 
-    const handleChange = name => e => {
-        const value = name === 'photo' ? e.target.files[0]  : e.target.value;
+    const handleChange = (name) => (e) => {
+        const value = name === 'photo' ? e.target.files[0] : e.target.value;
         //const val2 = name === 'photo' ? e.target.files[1]  : e.target.value;
         /*let value=[];
         if(name==='photo') {
@@ -107,15 +112,15 @@ const CreateBlog = ({router}) => {
         formData.append(name, value);
         //formData.append(name, val2);
         //setValues({...values, [name]: value, formData, error: ''});
-        setValues({...values, [name]: value, formData, error: ''});
+        setValues({ ...values, [name]: value, formData, error: '' });
     };
 
-    const handleBody = e => {
+    const handleBody = (e) => {
         setBody(e);
         formData.set('body', e);
-        if(typeof window !== 'undefined') {
+        if (typeof window !== 'undefined') {
             //Accessing the local storage.
-            localStorage.setItem('blog', JSON.stringify(e));    
+            localStorage.setItem('blog', JSON.stringify(e));
         }
     };
 
@@ -127,12 +132,12 @@ const CreateBlog = ({router}) => {
 
         We returned another function here.
     */
-    const handleToggle = c => () => {
-        setValues({...values, error: ''});
+    const handleToggle = (c) => () => {
+        setValues({ ...values, error: '' });
         //return the first index or -1
         const clickedCategory = checked.indexOf(c);
-        const all = [...checked]
-        
+        const all = [...checked];
+
         if (clickedCategory === -1) {
             all.push(c);
         } else {
@@ -143,12 +148,12 @@ const CreateBlog = ({router}) => {
         formData.set('categories', all);
     };
 
-    const handleTagsToggle = t => () => {
-        setValues({...values, error: ''});
+    const handleTagsToggle = (t) => () => {
+        setValues({ ...values, error: '' });
         //return the first index or -1
         const clickedTag = checkedTag.indexOf(t);
-        const all = [...checkedTag]
-        
+        const all = [...checkedTag];
+
         if (clickedTag === -1) {
             //If it was not found
             all.push(t);
@@ -163,9 +168,10 @@ const CreateBlog = ({router}) => {
 
     const showCategories = () => {
         return (
-            categories && categories.map((c, i) => (
+            categories &&
+            categories.map((c, i) => (
                 <li key={i} className="list-unstyled">
-                    <input onChange={handleToggle(c._id)} type="checkbox" className="mr-2"/>
+                    <input onChange={handleToggle(c._id)} type="checkbox" className="mr-2" />
                     <label className="form-check-label">{c.name}</label>
                 </li>
             ))
@@ -174,9 +180,10 @@ const CreateBlog = ({router}) => {
 
     const showTags = () => {
         return (
-            tags && tags.map((t, i) => (
+            tags &&
+            tags.map((t, i) => (
                 <li key={i} className="list-unstyled">
-                    <input onChange={handleTagsToggle(t._id)} type="checkbox" className="mr-2"/>
+                    <input onChange={handleTagsToggle(t._id)} type="checkbox" className="mr-2" />
                     <label className="form-check-label">{t.name}</label>
                 </li>
             ))
@@ -184,13 +191,13 @@ const CreateBlog = ({router}) => {
     };
 
     const showError = () => (
-        <div className="alert alert-danger" style={{display: error ? '' : 'none'}}>
+        <div className="alert alert-danger" style={{ display: error ? '' : 'none' }}>
             {error}
         </div>
     );
 
     const showSuccess = () => (
-        <div className="alert alert-success" style={{display: success ? '' : 'none'}}>
+        <div className="alert alert-success" style={{ display: success ? '' : 'none' }}>
             {success}
         </div>
     );
@@ -204,11 +211,11 @@ const CreateBlog = ({router}) => {
                 </div>
 
                 <div className="form-group">
-                    <ReactQuill 
-                        modules={QuillModules} 
+                    <ReactQuill
+                        modules={QuillModules}
                         formats={QuillFormats}
-                        value={body} 
-                        placeholder="Blog içeriğini girin" 
+                        value={body}
+                        placeholder="Blog içeriğini girin"
                         onChange={handleBody}
                     />
                 </div>
@@ -230,33 +237,33 @@ const CreateBlog = ({router}) => {
                 <div className="col-md-4">
                     <div>
                         <div className="form-group pb-2">
-                            <h5 style={{color: 'green'}}>Resim ekleyin</h5>
+                            <h5 style={{ color: 'green' }}>Resim Ekleyin</h5>
                             <hr />
 
                             <small className="text-muted">Maksimum boyut: 1MB</small>
                             <br />
                             <label className="btn btn-outline-success">
-                                Resim ekleyin
-                                <input onChange={handleChange('photo')} type="file" accept="image/*" hidden/>
+                                Resim Ekleyin
+                                <input onChange={handleChange('photo')} type="file" accept="image/*" hidden />
                             </label>
                         </div>
                     </div>
                     <div>
-                        <h5 style={{color: 'green'}}>Hayvan Kategorileri</h5>
+                        <h5 style={{ color: 'green' }}>Hayvan Kategorileri</h5>
                         <hr />
-                        <ul style={{maxHeight: '100px', overflowY: 'scroll'}}>{showCategories()}</ul>
+                        <ul style={{ maxHeight: '100px', overflowY: 'scroll' }}>{showCategories()}</ul>
                     </div>
                     <div>
-                        <h5 style={{color: 'green'}}>Alt-tür Kategoriler</h5>
+                        <h5 style={{ color: 'green' }}>Alt-tür Kategoriler</h5>
                         <hr />
-                        <ul style={{maxHeight: '100px', overflowY: 'scroll'}}>{showTags()}</ul>
+                        <ul style={{ maxHeight: '100px', overflowY: 'scroll' }}>{showTags()}</ul>
                     </div>
                 </div>
 
                 <div>
                     <button type="submit" className="btn btn-success mt-5">
                         Blogu Yayımla
-                    </button> 
+                    </button>
                 </div>
             </div>
         </div>
@@ -267,4 +274,3 @@ const CreateBlog = ({router}) => {
     With withRouter, you will have access to next/router.
 */
 export default withRouter(CreateBlog);
-

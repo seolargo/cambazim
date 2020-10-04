@@ -1,0 +1,1031 @@
+/*@media only screen and (min-width: 280px) {
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #show-all-notices {
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    #detailed-search {
+        margin-left: 50px;
+    }
+    #detayli-arama {
+        width: 200px;
+    }
+    #show-all-notices-text {
+        margin-left: -70px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        width: 414px;
+    }
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        padding-right: 20px;
+        text-align: 'justify';
+    }
+    .list-mobile-picture {
+        width: 100%;
+        height: 100%;
+        object-fit: 'contain';
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1601496362/pp_xronu3.jpg');
+    }
+    .cambazim-logo-309-48 {
+        width: 100%;
+        min-width: 20px;
+        text-align: center;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    img {
+        width: 100%;
+        min-width: 20px;
+        height: auto;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #list-mobile-ipad {
+        display: none;
+    }
+    #gozat {
+        margin-left: 30px;
+        margin-right: auto;
+        width: 200px;
+    }
+    .social-container {
+        margin-left: -130px;
+        margin-right: auto;
+    }
+    #img-1680 {
+        display: none;
+    }
+    #img-360 img {
+        width: 85%;
+        min-width: 20px; 
+        height: 120px;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #show-all-notices {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detailed-search {
+        margin-left: 50px;
+    }
+    #detayli-arama {
+        width: 200px;
+    }
+    #show-all-notices-text {
+        margin-left: -40px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        width: 414px;
+    }
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        padding-right: 20px;
+        text-align: 'justify';
+    }
+
+    .cambazim-logo-309-48 {
+        width: 300px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    img {
+        min-width: 100%;
+        height: auto;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #list-mobile-ipad {
+        display: none;
+    }
+    #gozat {
+        margin-left: 0px;
+        margin-right: auto;
+        width: 300px;
+    }
+    .social-container {
+        margin-left: -80px;
+    }
+    #img-1680 {
+        display: none;
+    }
+    #img-360 img {
+        width: 80%;
+        min-width: 20px; 
+        height: 110px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #show-all-notices {
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    #detailed-search {
+        margin-left: 50px;
+    }
+    #detayli-arama {
+        width: 200px;
+    }
+    #show-all-notices-text {
+        margin-left: -15px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        width: 414px;
+    }
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        text-align: 'justify';
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .list-mobile-picture {
+        width: 309px;
+        height: 100%;
+        object-fit: 'contain';
+        background-image: url('https://res.cloudinary.com/dmci3ih0i/image/upload/v1601496362/pp_xronu3.jpg');
+    }
+    .cambazim-logo-309-48 {
+        width: 309px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        min-width: 309px;
+        height: auto;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #list-mobile-ipad {
+        display: none;
+    }
+    #gozat {
+        margin-left: 20px;
+        margin-right: auto;
+    }
+    .social-container {
+        margin-left: -180px;
+        margin-right: auto;
+    }
+    #img-1680 {
+        display: none;
+    }
+    #img-360 img {
+        width: 70%;
+        min-width: 20px; 
+        height: 110px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    #list-mobile-ipad {
+        display: none;
+    }
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #show-all-notices {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detailed-search {
+        margin-left: 150px;
+    }
+    #detayli-arama {
+        width: 200px;
+    }
+    #show-all-notices-text {
+        margin-left: -15px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        width: 414px;
+    }
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        text-align: 'justify';
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cambazim-logo-309-48 {
+        width: 309px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        min-width: 100%;
+        height: auto;
+    }
+    .imagesThree {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    #list-mobile-ipad {
+        display: none;
+    }
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #show-all-notices {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detailed-search {
+        margin-left: 150px;
+    }
+    #detayli-arama {
+        width: 200px;
+    }
+    #show-all-notices-text {
+        margin-left: -15px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        width: 414px;
+    }
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        text-align: 'justify';
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cambazim-logo-309-48 {
+        width: 309px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        min-width: 100%;
+        height: auto;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        display: none;
+    }
+    #img-1680 {
+        display: none;
+    }
+    #img-360 img {
+        width: 60%;
+        min-width: 20px; 
+        height: 180px;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 120px;
+        margin-right: auto;
+    }
+    #show-all-notices {
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detailed-search {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detayli-arama {
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #show-all-notices-text {
+        margin-left: -15px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        padding-right: 20px;
+        padding-left: 30px;
+        text-align: 'justify';
+    }
+
+    /*#list-mobile-ipad {
+        font-family: 'Lato', sans-serif;
+        padding-right: 20px;
+        padding-left: 30px;
+        text-align: 'justify';
+    }
+
+    .cambazim-logo-309-48 {
+        width: 309px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        min-width: 100%;
+        height: auto;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        display: none;
+    }
+    #bizden-footer {
+        margin-left: 100px;
+    }
+    #img-1680 {
+        display: none;
+    }
+    #img-360 img {
+        width: 90%;
+        min-width: 20px; 
+        height: 160px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 823px) and (min-height: 411px) {
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 120px;
+        margin-right: auto;
+    }
+    #show-all-notices {
+        margin-top: auto;
+        margin-left: 200px;
+        margin-right: 20px;
+    }
+    #detailed-search {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detayli-arama {
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #show-all-notices-text {
+        margin-left: -15px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        padding-right: 20px;
+        padding-left: 30px;
+        text-align: 'justify';
+    }
+    /*#list-mobile-ipad {
+        font-family: 'Lato', sans-serif;
+        padding-right: 20px;
+        padding-left: 30px;
+        text-align: 'justify';
+    }
+
+    .cambazim-logo-309-48 {
+        width: 309px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        min-width: 100%;
+        height: auto;
+    }
+    .imagesThree {
+        display: none;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        display: none;
+    }
+    #bizden-footer {
+        margin-left: 100px;
+    }
+    #img-1680 {
+        display: none;
+    }
+    #img-360 img {
+        width: 90%;
+        min-width: 20px; 
+        height: 160px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    .bursalogo {
+        margin-left: 50px;
+    }
+    #giris-yap-button {
+        margin-left: 20px;
+    }
+    #password-explanation {
+        margin-left: 20px;
+    }
+    #password-input {
+        margin-left: 10px;
+    }
+    #email-input {
+        margin-left: 10px;
+    }
+    #login-google {
+        margin-left: 20px;
+    }
+    #forgot-password {
+        margin-left: 20px;
+    }
+    #blog-introduction {
+        margin-left: 40px;
+    }
+    #categories-tags-list {
+        margin-left: 75px;
+    }
+    #blogs {
+        margin-left: 40px;
+    }
+    #search-bar {
+        margin-left: 170px;
+        margin-right: auto;
+    }
+    #show-all-notices {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detailed-search {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detayli-arama {
+        width: 250px;
+    }
+    #show-all-notices-text {
+        margin-left: -15px;
+    }
+    #price_id {
+        width: 400px;
+    }
+    #city_id {
+        width: 400px;
+    }
+    #town_id {
+        width: 400px;
+    }
+    #village_id {
+        width: 400px;
+    }
+    #animal_id {
+        width: 400px;
+    }
+    #animalSub_id {
+        width: 400px;
+    }
+    #signup-input {
+        margin-left: 20px;
+    }
+    #sosyal-medya-kanallarimiz-text {
+        width: 414px;
+    }
+    #list-mobile {
+        font-family: 'Lato', sans-serif;
+        padding-right: 50px;
+        padding-left: 125px;
+        text-align: 'center';
+    }
+    /*#list-mobile-ipad {
+        font-family: 'Lato', sans-serif;
+        padding-right: 20px;
+        padding-left: 30px;
+        text-align: 'justify';
+    }
+
+    .cambazim-logo-309-48 {
+        width: 309px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        min-width: 100%;
+        height: auto;
+    }
+    .imagesThree {
+        display: none !important;
+    }
+    #bizden-footer {
+        margin-left: 300px;
+    }
+    #copyright {
+        margin-left: 200px;
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    #iletisim-footer {
+        display: block;
+    }
+    #kullanim-footer {
+        display: block;
+    }
+    #bizden-footer {
+        display: block;
+    }
+    #search-bar {
+        margin-left: 200px;
+    }
+    #list-mobile {
+        display: none;
+    }
+    .list-mobile-picture {
+        display: none;
+    }
+    .cambazim-logo-309-48 img {
+        display: none;
+    }
+    .cambazim-logo-309-48 {
+        display: none;
+    }
+    #my-image img {
+        display: none;
+    }
+    #img-360 img {
+        display: none;
+    }
+    #show-all-notices {
+        display: block;
+    }
+    #detailed-search {
+        display: block;
+    }
+    #detayli-arama {
+        margin-left: 5px;
+    }
+    #filtered-results {
+        display: block;
+    }
+    #img-1680 img {
+        display: inline-block;
+    }
+    .imagesThree {
+        display: none;
+    }
+}*/

@@ -16,26 +16,26 @@ const Search = () => {
     /*
         When the user clicks the "Ara" button...
     */
-    const searchSubmit = e => {
+    const searchSubmit = (e) => {
         e.preventDefault();
-        listSearch({ search }).then(data => {
-            setValues({ 
-                ...values, 
-                results: data, 
-                searched: true, 
-                message: `Aramanıza benzer ${data.length} ilan bulundu` 
+        listSearch({ search }).then((data) => {
+            setValues({
+                ...values,
+                results: data,
+                searched: true,
+                message: `Aramanıza benzer ${data.length} ilan bulundu`
             });
             //setValues({ ...values, results: data, searched: true});
         });
     };
 
-    const handleChange = e => {
+    const handleChange = (e) => {
         // console.log(e.target.value);
-        setValues({ 
-            ...values, 
-            search: e.target.value, 
-            searched: false, 
-            results: [] 
+        setValues({
+            ...values,
+            search: e.target.value,
+            searched: false,
+            results: []
         });
     };
 
@@ -47,7 +47,7 @@ const Search = () => {
     */
     const searchedProducts = (results = []) => {
         return (
-            <div className="jumbotron bg-white" style={{marginLeft: '500px'}}>
+            <div className="jumbotron bg-white" id="list-searched-results">
                 {message && <p className="pt-4 text-muted font-italic">{message}</p>}
 
                 {results.map((product, i) => {
@@ -66,7 +66,7 @@ const Search = () => {
     const searchForm = () => (
         <form onSubmit={searchSubmit}>
             <div className="row" id="search-bar">
-                <div className="col-md-6" >
+                <div className="col-md-6">
                     <input type="search" className="form-control" placeholder="İlanlarda ara" onChange={handleChange} />
                 </div>
                 <div className="col-md-2">
@@ -79,7 +79,7 @@ const Search = () => {
     );
 
     return (
-        <div className="container-fluid" >
+        <div className="container-fluid">
             <div className="pt-3 pb-5">{searchForm()}</div>
             {searched && <div style={{ marginTop: '-120px', marginBottom: '-80px' }}>{searchedProducts(results)}</div>}
         </div>

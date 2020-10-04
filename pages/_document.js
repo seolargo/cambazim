@@ -29,6 +29,7 @@ class MyDocument extends Document {
                     />
                     {/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"/>*/}
                     <link rel="stylesheet" href="/static/css/styles.css" />
+                    <link rel="stylesheet" href="/static/css/queries.css" />
                     {/*<link
                         href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap"
                         rel="stylesheet"

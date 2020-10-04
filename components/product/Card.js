@@ -80,13 +80,21 @@ const Card = ({
             <div className="row no-gutters">
                 {shouldRedirect(redirect)}
                 <ToastContainer />
-                <div className="col-md-4">
-                    <img
-                        src={`${API}/product/photo1/${product.slug}`}
-                        className="card-img center mt-3 mb-3"
-                        alt="..."
-                        style={{ maxHeight: '400px' }}
-                    />
+                <div className="col-md-4" id="index-images-small">
+                    <div id="img-1680">
+                        <img
+                            src={`${API}/product/photo1/${product.slug}`}
+                            className="card-img center mt-3 mb-3"
+                            alt="..."
+                        />
+                    </div>
+                    <div id="img-360">
+                        <img
+                            src={`${API}/product/photo1/${product.slug}`}
+                            className="card-img center mt-3 mb-3"
+                            alt="..."
+                        />
+                    </div>
                 </div>
                 <div className="col-md-8">
                     <Link href={`/products/${product.slug}`}>
@@ -114,12 +122,14 @@ const Card = ({
                     <hr style={{ clear: 'both' }} />
                     <h5 className="ml-3">
                         <small className="text-muted">
-                            {product.animalType}-{product.poultry} {product.animalSubCategories} {product.animalVariety}
+                            Hayvan Türü: {product.animalType} / {product.poultry} / {product.animalSubCategories} /
+                            {product.animalVariety}
                         </small>
                     </h5>
-                    <h5 className="ml-3">
+                    <h5 className="ml-3" id="yayimlanma-tarihi-small">
                         <small className="text-muted">
-                            {product.village}/{product.town}/{product.city} İlanın yayımlanma tarihi:{' '}
+                            Konum: {product.village}/{product.town}/{product.city}
+                            <br /> İlanın yayımlanma tarihi:{' '}
                             {moment(product.createdAt, 'YYYY-MM-DDThh-mm-ssZ').format('DD/MM/YYYY')}
                         </small>
                     </h5>

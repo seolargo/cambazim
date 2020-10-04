@@ -117,6 +117,8 @@ import Loader from 'react-loader-spinner';
 
 import { RadioBoxForPricesNew } from './RadioBoxForPricesNew';
 
+import CookieConsent from 'react-cookie-consent';
+
 //import RadioBoxForVillages from './RadioBoxForVillages';
 //import RadioBoxForCities from './RadioBoxForCities';
 //import RadioBoxForTowns from './RadioBoxForTowns';
@@ -124,7 +126,6 @@ import { RadioBoxForPricesNew } from './RadioBoxForPricesNew';
 
 import Search from '../components/product/Search';
 
-import Footer from '../components/Footer';
 import AdvancedSearch from '../components/product/AdvancedSearch';
 
 import { Dropdown } from 'react-bootstrap';
@@ -743,7 +744,7 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
 
     useEffect(() => {
         loadFilteredResults(skip, limit, myFilters.filters);
-        console.log(myFilters.filters);
+        //console.log(myFilters.filters);
     }, []);
 
     useEffect(() => {
@@ -803,6 +804,7 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
                 <br />
             </div>*/}
             <div className="list-mobile">
+                <br />
                 <div style={{ color: 'green', marginLeft: '60px', marginBottom: '10px' }} id="list-mobile">
                     <GiFarmer size={32} /> Emekçilerimiz! Hayvanlarınızı daha yüksek ücretlerle satın. Üstelik sizlerden
                     komisyon almıyoruz!
@@ -813,7 +815,23 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
                 <div style={{ color: 'green', marginLeft: '60px', marginBottom: '10px' }} id="list-mobile">
                     <BsSearch size={32} /> Detaylı arama yaparak çevrenizdeki hayvanları görüntüleyin!
                 </div>
+                <br />
             </div>
+
+            {/*<div className="list-mobile-ipad">
+                <div style={{ color: 'green', marginLeft: '60px', marginBottom: '10px' }} id="list-mobile-ipad">
+                    <GiFarmer size={32} /> Emekçilerimiz! Hayvanlarınızı daha yüksek ücretlerle satın.
+                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Üstelik sizlerden
+                    komisyon almıyoruz!
+                </div>
+                <div style={{ color: 'green', marginLeft: '60px', marginBottom: '10px' }} id="list-mobile-ipad">
+                    <BsFillPersonFill size={32} /> Virüsten kaçının! Çiftlik hayvanlarına 'uzaktan' bakın.
+                </div>
+                <div style={{ color: 'green', marginLeft: '60px', marginBottom: '10px' }} id="list-mobile-ipad">
+                    <BsSearch size={32} /> Detaylı arama yaparak çevrenizdeki hayvanları görüntüleyin!
+                </div>
+            </div>*/}
+
             <div className="container">
                 <div className="row">
                     <div className="col-4" id="detailed-search">
@@ -1363,18 +1381,17 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
                             </div>
                         )}
                     </div>
-
                     {/*<div className="col-sm">
                         {showAllProducts()}
                         {showLoadedProducts()}
                         {loadMoreButton()}
                             </div>
                     */}
-                    <div className="col-8" id="show-all-notices">
+                    <div className="col-8">
                         <h2 className="mb-4" style={{ textAlign: 'left', color: 'green' }} id="show-all-notices-text">
                             İlanları Görüntülüyorsunuz
                         </h2>
-                        <div className="row">
+                        <div className="row" id="filtered-results">
                             {filteredResults.map((product, i) => (
                                 <Cardd key={i} product={product} />
                             ))}
@@ -1382,6 +1399,10 @@ const Index = ({ products, totalProducts, productsLimit, productSkip, router }) 
                     </div>
                 </div>
             </div>
+            <CookieConsent buttonText="Kabul ediyorum">
+                cambazim.com internet sitesini kullanarak çerezlere izin vermiş olursunuz.{' '}
+                <a href="/cookies">Çerez politikamız</a>
+            </CookieConsent>
         </Layout>
     );
 };
